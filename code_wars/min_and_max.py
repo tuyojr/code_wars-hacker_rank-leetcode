@@ -9,3 +9,11 @@
 # * [5]                             -> min = 5, max = 5
 # Notes
 # You may consider that there will not be any empty arrays/vectors.
+
+def minimum(arr):
+    #your code here...
+    return min(arr)
+
+def maximum(arr):
+    #...and here
+    return max(arr)
