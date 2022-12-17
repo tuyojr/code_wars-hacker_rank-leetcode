@@ -1,7 +1,14 @@
 # This kata is about multiplying a given number by eight 
 # if it is an even number and by nine otherwise.
 
-
+def simple_multiplication(number) :
+    # Your code goes here
+    if number % 2 == 0:
+        result = number * 8
+        return result
+    else:
+        result = number * 9
+        return result
 
 # import codewars_test as test
 # from solution import simple_multiplication
