@@ -73,3 +73,25 @@
 # 'a' appeared  times in positions 1,2 and 4.
 # 'b' appeared  times in positions 3 and 5.
 # In the sample problem, if 'c' also appeared in word group B, you would print -1.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Import the deafaultdict module
+from collections import defaultdict
+
+# create a default dict variable
+d = defaultdict(list)
+
+# create variables to hold the two integers
+n,m = map(int,input().split())
+
+# loop through the range of the n input
+# and set the input as a key in the dictionary,
+# with the value of i as the key 
+for i in range(n):
+    d[input()].append(i+1)
+
+# loop through the range of the m input
+# and set the input as a key in the dictionary.
+# print this key or -1 
+for i in range(m):
+    print(*d[input()] or [-1])
