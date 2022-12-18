@@ -78,3 +78,33 @@
 # Net Price: 20
 # CANDY: Quantity bought: 4, Price: 5
 # Net Price: 20
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# import the OderedDict module
+from collections import OrderedDict
+
+# input the total number of items bought
+N = int(input())
+
+# create an orderd dictionary
+total_items = OrderedDict()
+
+# loop through each item bought
+for goods in range(N):
+    
+    # split each item into a list so we can extract the price
+    item = input().split()
+    
+    # extract the price from the item bought and convert to int
+    net_price = int(item[-1])
+    
+    # extract the item_name
+    item_name = ' '.join(item[:-1])
+    
+    # update the dictionary every time the loop runs
+    total_items[item_name] = total_items.get(item_name, 0) + net_price
+    
+# loop through the dictionary and extract the item_name and the net_price
+for item_name, net_price in total_items.items():
+    print(item_name, net_price)
