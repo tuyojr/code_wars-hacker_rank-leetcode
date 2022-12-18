@@ -7,7 +7,10 @@
 # 999  --> "999"
 # -100 --> "-100"
 
-
+def number_to_string(num):
+    # Return a string of the number here!
+    
+    return str(num)
 
 # import codewars_test as test
 # from solution import number_to_string
