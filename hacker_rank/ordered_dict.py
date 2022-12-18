@@ -81,13 +81,13 @@
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
-# import the OderedDict module
+# import the OrderedDict module
 from collections import OrderedDict
 
 # input the total number of items bought
 N = int(input())
 
-# create an orderd dictionary
+# create an ordered dictionary
 total_items = OrderedDict()
 
 # loop through each item bought
