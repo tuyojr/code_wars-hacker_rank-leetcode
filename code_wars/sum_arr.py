@@ -23,7 +23,13 @@
 # Advanced users may find this extremely easy and can easily write this 
 # in one line.
 
-
+def sum_array(a):
+    
+    # check if the array is empty, return a 0, else sum all the contents
+    if a == []:
+        return 0
+    else:
+        return sum(a)
 
 # import codewars_test as test
 # from solution import sum_array
