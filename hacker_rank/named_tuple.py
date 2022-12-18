@@ -86,3 +86,24 @@
 
 # Can you solve this challenge in 4 lines of code or less?
 # NOTE: There is no penalty for solutions that are correct but have more than 4 lines.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# import the named tuple library
+from collections import namedtuple
+
+# create variables to accept user input for the total number of students and the columns in the spreadsheet.
+N, Students = int(input()), namedtuple('Student', input())
+
+# next, we know there should be a colum with 'MARKS', we want to extract every score and sum them up
+# 'int' converts the input to integers
+# call the 'Students' named_tuple
+# '*input' pass a variable number of inputs from the user
+# '.split' method places each input into a list
+# next we want to look for the MARKS column, hence the .MARKS
+# the 'for' loop loops over the input, per the total number 'N' of students in tge class.
+# Lastly, we sum what we have extracted
+mark_extractor = sum([int(Students(*input().split()).MARKS) for mark in range(N)])
+
+# prints the required average
+print( mark_extractor / N)
