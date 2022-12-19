@@ -7,7 +7,19 @@
 # * "1234!_ "     -> "11223344!!__  "
 # Good Luck!
 
-
+def double_char(s):
+    
+    # create an empty string variable for the final result
+    result = ''
+    
+    # loop through each character in the string
+    for char in s:
+        
+        # for each character in the the string, update the result twice each time
+        result += char + char
+    
+    # return the result
+    return result
 
 # test.assert_equals(double_char("String"),"SSttrriinngg")
 # test.assert_equals(double_char("Hello World"),"HHeelllloo  WWoorrlldd")
