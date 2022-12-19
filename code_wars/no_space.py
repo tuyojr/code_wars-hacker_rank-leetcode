@@ -1,6 +1,14 @@
 # Simple, remove the spaces from the string, then return the resultant string.
 
-
+def no_space(x):
+    #your code here
+    
+    # create a list of the words in the str
+#     word = x.split()
+    # join the list together and return the result
+#     result = ''.join(word)
+    result = ''.join(x.split())
+    return result
 
 # import codewars_test as test
 # from solution import no_space
