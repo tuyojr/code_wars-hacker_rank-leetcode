@@ -5,7 +5,8 @@
 # pops from either side of the deque with approximately the 
 # same O(1) performance in either direction.
 
-# Click on the link to learn more about deque() methods.
+# Click on the link to learn more about deque() methods 
+# (https://docs.python.org/2/library/collections.html#deque-objects).
 # Click on the link to learn more about various approaches to 
 # working with deques: Deque Recipes.
 
@@ -76,3 +77,4 @@
 
 # Sample Output
 # 1 2
+
