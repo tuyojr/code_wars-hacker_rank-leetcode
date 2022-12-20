@@ -11,7 +11,17 @@
 # 1601 --> 17
 # 2000 --> 20
 
-
+def century(year):
+    # Finish this :)
+    
+    # extract the century without remainder
+    century = year // 100
+    
+    # if the year divided by 100 has no remainder, return the century
+    # else, return the century + 1
+    if year % 100 == 0:
+        return century
+    return century + 1
 
 # import codewars_test as test
 # from solution import century
