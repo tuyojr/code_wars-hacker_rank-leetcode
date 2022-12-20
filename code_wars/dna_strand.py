@@ -45,6 +45,7 @@ def DNA_strand(dna):
     # return the corresponding updated base pair
     return pair
 
+    # return dna.translate(str.maketrans("ATCG","TAGC"))
 # import codewars_test as test
 # from solution import DNA_strand
 
