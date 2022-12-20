@@ -103,7 +103,7 @@ for items in methods:
         # try to append each method and value to a variable
         method, value = items.split(' ')
         
-        # use eval method to exectue a method input by the user on the deque
+        # use eval method to execute a method input by the user on the deque
         eval('d.{}({})'.format(method, value))
     
     except:
