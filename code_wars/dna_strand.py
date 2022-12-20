@@ -18,8 +18,32 @@
 # "ATTGC" --> "TAACG"
 # "GTAT" --> "CATA"
 
-
-
+def DNA_strand(dna):
+    # code here
+    
+    # create an empty string for the final base pair that accepts
+    pair = ''
+    
+    # loop through each base in the DNA
+    for base in dna:    
+        
+        # if the base is Adenine, pair it with the corresponding Thymine
+        if base == 'A':
+            pair += 'T'
+            
+        # if the base is Cytosine, pair it with the corresponding Guanine
+        elif base == 'C':
+            pair += 'G'
+        
+        # if the base is Thymine, pair it with the corresponding Adenine
+        elif base == 'T':
+            pair += 'A'
+        
+        # if the base is Guanine, pair it with the corresponding Cytosine
+        else:
+            pair += 'C'
+    # return the corresponding updated base pair
+    return pair
 
 # import codewars_test as test
 # from solution import DNA_strand
