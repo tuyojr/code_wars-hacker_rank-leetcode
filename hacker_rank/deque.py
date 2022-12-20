@@ -78,3 +78,39 @@
 # Sample Output
 # 1 2
 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# import the deque module
+from collections import deque
+
+# prompt the user for the number of values they want to input
+N = int(input())
+
+# create an empty list to hold the methods input by the user
+methods = []
+
+# loop through each method and add them to the list
+for i in range(N):
+    methods.append(input())
+
+# use the deque module to create an empty deque
+d = deque()
+
+# loop through each method in the list
+for items in methods:
+    
+    try:
+        # try to append each method and value to a variable
+        method, value = items.split(' ')
+        
+        # use eval method to exectue a method input by the user on the deque
+        eval('d.{}({})'.format(method, value))
+    
+    except:
+        # use the except method to execute user methods that have no value    
+        eval('d.{}()'.format(items))
+        
+# loop through each value in the deque and print them to the screen
+for num in d:
+    print(num, end=' ')
+    
