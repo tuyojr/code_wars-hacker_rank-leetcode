@@ -8,7 +8,7 @@
 # Click on the link to learn more about deque() methods 
 # (https://docs.python.org/2/library/collections.html#deque-objects).
 # Click on the link to learn more about various approaches to 
-# working with deques: Deque Recipes.
+# working with deques: Deque Recipes (https://docs.python.org/2/library/collections.html#deque-objects).
 
 # Example
 
