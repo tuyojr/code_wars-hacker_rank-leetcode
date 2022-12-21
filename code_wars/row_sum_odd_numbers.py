@@ -33,6 +33,10 @@ def row_sum_odd_numbers(n):
     # return the total sum of odd numbers in each row
     return total
 
+# shorter solution
+# the cube product is equal to the total sum of odd numbers. MIND BLOWING!
+# return n ** 3
+
 # import codewars_test as test
 # from solution import row_sum_odd_numbers
 
