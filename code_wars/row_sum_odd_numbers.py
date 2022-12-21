@@ -12,7 +12,26 @@
 # 1 -->  1
 # 2 --> 3 + 5 = 8
 
-
+def row_sum_odd_numbers(n):
+    #your code here
+    
+    # create a variable to hold the total of each row
+    total = 0
+    
+    # calculate the starting number of each row
+    start = (n * n) - (n - 1)
+    
+    # calculate the end of each row
+    end = start + n * 2
+    
+    # loop through each row and increment by two to only count the odd numbers
+    for odd_num in range(start, end, 2):
+        
+        # for each iteration, update the total variable
+        total += odd_num
+    
+    # return the total sum of odd numbers in each row
+    return total
 
 # import codewars_test as test
 # from solution import row_sum_odd_numbers
