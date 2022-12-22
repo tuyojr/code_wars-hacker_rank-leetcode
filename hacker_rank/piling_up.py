@@ -52,3 +52,68 @@
 # right - 3, left - 2, right - 1.
 # In the second test case, no order gives an appropriate arrangement of 
 # vertical cubes. 3 will always come after either 1 or 2.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# define a function that checks if a cube can be piled or not
+# it will travel through the user's list from left and right to check if
+# they can be piled up depending o which value is greater.
+def piler(side_length):
+    
+    # define a variable that checks the left index
+    left_index = 0
+    
+    # define a variable that checks the value right of the index
+    right_index = len(side_length) - 1
+    
+    # since we don't know the current length of the cube, we define a variable that is infinity.
+    # this length will be updated when we know the current length after comparing the left and right values
+    current_cube_length = float("inf")
+    
+    # use a wile loop to travel across the list and check when the left_index
+    # is less than or equal to the right_index, we want to break out of the condition
+    while left_index <= right_index:
+        
+        # since we are not comparing the index, create a variable to hold the values
+        # at the left and right indexes of the list
+        left_value = side_length[left_index]
+        right_value = side_length[right_index]
+    
+        # now lets check if we can pile them on each other or not
+        if left_value >= right_value and left_value <= current_cube_length:
+            
+            # update the cube length
+            current_cube_length = left_value
+            
+            # increment the index form the left to go to the next value
+            left_index += 1
+        elif right_value >= left_value and right_value <= current_cube_length:
+            
+            # update the cube length
+            current_cube_length = right_value
+            
+            # decrement the index from the right to go to the next value
+            right_index -= 1
+        else:
+            
+            # if we're unable to pile it
+            return "No"
+        
+    # if we're able to pile it
+    return "Yes"
+
+# create a variable for the test cases ---> T
+T = int(input())
+
+# loop through each test case.
+for test_case in range(T):
+    # prompt the user for the number of values in each horizontal cube
+    n = int(input())
+    
+    # prompt the user to enter the list of values in each horizontal cube
+    # this list will be updated each time a value is entered
+    side_length = [int(length) for length in input().split()]
+    
+    print(piler(side_length))
+    
+    
