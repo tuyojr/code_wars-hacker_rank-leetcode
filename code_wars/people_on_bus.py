@@ -20,3 +20,16 @@
 
 # The second value in the first integer array is 0, since the 
 # bus is empty in the first bus stop.
+
+
+
+# import codewars_test as test
+# # TODO Write tests
+# import solution # or from solution import example
+
+# # test.assert_equals(actual, expected, [optional] message)
+# @test.describe("Example")
+# def test_group():
+#     @test.it("test case")
+#     def test_case():
+#         test.assert_equals(1 + 1, 2)
