@@ -21,15 +21,18 @@
 # The second value in the first integer array is 0, since the 
 # bus is empty in the first bus stop.
 
-
+def solution(arr):
+    for people in arr[-1]:
+        return people
+print(solution([[6,0], [2,5], [3,4]]))
 
 # import codewars_test as test
-# # TODO Write tests
-# import solution # or from solution import example
+# from solution import number
 
-# # test.assert_equals(actual, expected, [optional] message)
-# @test.describe("Example")
-# def test_group():
-#     @test.it("test case")
-#     def test_case():
-#         test.assert_equals(1 + 1, 2)
+# @test.describe("Fixed Tests")
+# def fixed_tests():
+#     @test.it('Basic Test Cases')
+#     def basic_test_cases():
+#         test.assert_equals(number([[10,0],[3,5],[5,8]]),5)
+#         test.assert_equals(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]),17)
+#         test.assert_equals(number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]),21)
