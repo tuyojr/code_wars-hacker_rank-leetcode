@@ -6,7 +6,14 @@
 # "This is an example!" ==> "sihT si na !elpmaxe"
 # "double  spaces"      ==> "elbuod  secaps"
 
+def reverse_words(text):
+  #go for it
 
+    # create a list from the text, and make sure to account for texts with withespace " "
+    words = text.split(" ")
+    
+    # return a joined string of words starting from the last character in each word
+    return " ".join(word[::-1] for word in words)
 
 # import codewars_test as test
 # from solution import reverse_words
