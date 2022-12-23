@@ -9,11 +9,17 @@
 def reverse_words(text):
   #go for it
 
-    # create a list from the text, and make sure to account for texts with withespace " "
-    words = text.split(" ")
+    # create an empty list to hold the  reversed words in the text
+    reversed_word = []
     
-    # return a joined string of words starting from the last character in each word
-    return " ".join(word[::-1] for word in words)
+    # loop through the text and split the words into a list
+    for words in text.split(' '):
+        
+        # reverse each word and add it to the created list
+        reversed_word.append(words[::-1])
+    
+    # join the words together and return it.
+    return ' '.join(reversed_word)
 
 # import codewars_test as test
 # from solution import reverse_words
