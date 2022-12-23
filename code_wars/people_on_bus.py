@@ -21,10 +21,21 @@
 # The second value in the first integer array is 0, since the 
 # bus is empty in the first bus stop.
 
-def solution(arr):
-    for people in arr[-1]:
-        return people
-print(solution([[6,0], [2,5], [3,4]]))
+def number(bus_stops):
+    # Good Luck!
+    
+    # create a variable to track number of people in and out
+    people_in = 0
+    people_out = 0
+    
+    # loop through each bus stop and update the number of people in and out
+    for stops in bus_stops:
+        people_in += stops[0]
+        people_out += stops[1]
+    
+    # return the value of the number of people in subtracted from the number of people out
+    # to get the number of people still on the bus
+    return people_in - people_out
 
 # import codewars_test as test
 # from solution import number
