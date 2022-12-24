@@ -32,6 +32,7 @@ def friend(x):
     
     # return the friends list
     return friends
+    # return [f for f in x if len(f) == 4]
 
 # import codewars_test as test
 # from solution import friend
