@@ -11,7 +11,27 @@
 # friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 # Note: keep the original order of the names in the output.
 
-
+def friend(x):
+    # create an empty list to hold your list of friends
+    friends = []
+    
+    # loop through the input list of potential friends
+    for i in x:
+        
+        # create a variable to hold the list of each friend, separated by a comma
+        # in the original list.
+        f = i.split(',')
+        
+        # loop through each person's name
+        for name in f:
+            
+            # if the name is exactly 4 characters, we want to add them to our friend's
+            # list
+            if len(name) == 4:
+                friends.append(name)
+    
+    # return the friends list
+    return friends
 
 # import codewars_test as test
 # from solution import friend
