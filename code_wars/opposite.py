@@ -6,7 +6,9 @@
 # 14: -14
 # -34: 34
 
-
+def opposite(number):
+  # your solution here
+    return -number
 
 # import codewars_test as test
 # from solution import opposite
