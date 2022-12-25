@@ -15,7 +15,16 @@
 # 0 <= m <= 59
 # 0 <= s <= 59
 
-
+def past(h, m, s):
+    # Good Luck!
+    # hrs * 3600000 ===> milliseconds
+    # mins * 60000 ===> milliseconds
+    # secs * 1000 ===> milliseconds
+    
+    # check against the given constraints and return a sum of hour, mins and secs
+    # already converted to ms with the conversion keys above
+    if 0 <= h <= 23 and 0 <= m <= 59 and 0 <= s <= 59:
+        return ((h * 3600000) + (m * 60000) + (s * 1000))
 
 # import codewars_test as test
 # from solution import past
