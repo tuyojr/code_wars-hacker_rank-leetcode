@@ -7,7 +7,12 @@
 # name + " does not play banjo"
 # Names given are always valid strings.
 
-
+def are_you_playing_banjo(name):
+    # Implement me!
+    if name.startswith('R') or name.startswith('r'):
+        return name + " plays banjo"
+    else:
+        return name + " does not play banjo"
 
 # import codewars_test as test
 
