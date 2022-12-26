@@ -10,7 +10,12 @@
 # For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], 
 # you should return [10, -65].
 
-
+def count_positives_sum_negatives(arr):
+    # the first part of the list comprehension returns only the positive numbers in
+    # the array.
+    # the second part returns the sum of all negative numbers in the arr if the array
+    # is not empty, else we return an empty array
+    return [len([i for i in arr if i > 0]), sum([i for i in arr if i < 0])] if len(arr) != 0 else []
 
 # import codewars_test as test
 # from solution import count_positives_sum_negatives
