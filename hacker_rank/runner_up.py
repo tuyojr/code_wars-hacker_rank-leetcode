@@ -24,3 +24,15 @@
 # Explanation 0
 # Given list is [2,3,6,6,5]. The maximum score is 6, second maximum is 5. 
 # Hence, we print 5 as the runner-up score.
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    
+    # create a lsit from the input
+    lst = [x for x in arr]
+    
+    # create a list removing all the duplicates
+    runner_up = list(set(lst))
+    
+    # get the second largest from the right
+    print(sorted(runner_up)[-2])
