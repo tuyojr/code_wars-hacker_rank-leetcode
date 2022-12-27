@@ -4,7 +4,18 @@
 
 # [1, 2, 3] --> [2, 4, 6]
 
-
+def maps(a):
+    # create a new list for the doubled values
+    new = []
+    
+    # loop through each item in the list
+    for i in a:
+        
+        # double each item and append it to the new list
+        new.append(i+i)
+    
+    # return the new list
+    return new
 
 # import codewars_test as test
 # from solution import maps
