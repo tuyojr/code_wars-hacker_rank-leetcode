@@ -17,6 +17,9 @@ def maps(a):
     # return the new list
     return new
 
+    # using list comprehension
+    # return [2 * num for num in a]
+
 # import codewars_test as test
 # from solution import maps
 
