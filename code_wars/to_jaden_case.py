@@ -17,7 +17,11 @@
 # Link to Jaden's former Twitter account @officialjaden via archive.org
 # https://web.archive.org/web/20190624190255/https://twitter.com/officialjaden
 
-
+def to_jaden_case(string):
+    # ...
+    # use a list comprehension to split the quote into words and capitalize 
+    # the first letter iin each and join them back.
+    return " ".join([w.capitalize() for w in string.split()])
 
 # from solution import to_jaden_case
 # import codewars_test as test
