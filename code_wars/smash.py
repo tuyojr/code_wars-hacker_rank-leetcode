@@ -8,7 +8,10 @@
 # Example
 # ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 
-
+def smash(words):
+    # use the .join method, using a space as the joining condition for each word in
+    # the words list
+    return " ".join(words)
 
 # import codewars_test as test
 # from solution import smash
