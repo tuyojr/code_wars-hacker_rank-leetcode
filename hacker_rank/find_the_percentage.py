@@ -52,15 +52,40 @@
 # 26.50
 
 if __name__ == '__main__':
+
+    # take the user input for the total number of students
     n = int(input())
+
+    # create an empty dictionary to hold each student name and their marks
     student_marks = {}
+
+    # loop through the total number of students
     for _ in range(n):
+
+        # each time the loop runs, allow the user input the name and score of
+        # each student on the same line, separated by a space
         name, *line = input().split()
+
+        # create a list of the students marks. they scores are mapped to each line
         scores = list(map(float, line))
+
+        # update the dictionary with the student name as the key and list of scores as values
         student_marks[name] = scores
+    
+    # ask the user for the name of the student they wish to find the average of their scores
     query_name = input()
+
+    # check if the name is in the student_marks dictionary
     if query_name in student_marks:
+
+        # grab the requested student's name and store their list of scores in a variable
         values = student_marks.get(query_name)
+
+        # calculate the total of their scores
         total = sum(values)
+
+        # find the average of their scores
         average = total / len(values)
+
+        # print the average to two decimal places (including zero), using the format method
         print(format(average, '.2f'))
