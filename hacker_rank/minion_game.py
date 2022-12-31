@@ -61,3 +61,39 @@
 
 # Note :
 # Vowels are only defined as AEIOU. In this problem, Y is not considered a vowel.
+
+def minion_game(string):
+    # your code goes here
+    
+    # create variables to keep track of kevin and stuart's scores
+    kevin = 0
+    stuart = 0
+    
+    # create a variable to hold the length of the string
+    length = len(s) 
+    
+    # loop through each letter in the length of the string
+    for letter in range(length):
+        
+        # if each letter in the input is a vowel, update player's score
+        if string[letter] in 'AEIOU':
+            
+            # kevin's score is the sum of kevin's initial score added
+            # to the difference between the length and the index of the letter
+            # the same goes for stuart
+            kevin = kevin+(length-letter)
+        else:
+            stuart = stuart+(length-letter)
+
+    # if kevin's score is greater than stuart's score, we print kevin as the winner. Vice versa
+    # if they're equal we print a DRAW
+    if(kevin>stuart):
+        print(f"Kevin {kevin}")
+    elif(kevin==stuart):
+        print("Draw")
+    else:
+        print(f"Stuart {stuart}")
+            
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
