@@ -32,7 +32,13 @@
 # isSquare  25  // => true
 # isSquare  26  // => false
 
-
+import math
+def is_square(n):    
+    if (n >= 0):
+        squared_num = int(math.sqrt(n))
+        return ((squared_num * squared_num) == n)
+    elif n < 0:
+        return False
 
 # import codewars_test as test
 # from solution import is_square
