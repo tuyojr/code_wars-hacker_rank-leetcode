@@ -61,3 +61,31 @@
 # 3. t[2] = "ADA" ---> u[2] = "AD"
 
 # Print each u[i] on a new line.
+
+def merge_the_tools(string, k):
+    # your code goes here
+    
+    # create a variable to store the length of the string
+    length = len(string)
+
+    # loop through each item in the string
+    for i in range(0, length, k):
+        
+        # create a variable to hold the final word
+        word = ''
+        
+        # loop through each character in the string from the ith index to
+        # the i + kth index to grab the character we're looking for to
+        # appear a certain number of times
+        for char in string[i: i+k]:
+            
+            # if the character us not in the word variable, update it with it
+            if char not in word:
+                word += char
+
+        # output the word
+        print(word)
+        
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
