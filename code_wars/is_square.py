@@ -40,6 +40,7 @@ def is_square(n):
     elif n < 0:
         return False
 
+    # return n > -1 and math.sqrt(n) % 1 == 0
 # import codewars_test as test
 # from solution import is_square
 
