@@ -14,7 +14,9 @@
 
 # Hint: Don't forget to check for bad values like null/undefined
 
-
+def count_sheeps(sheep):
+    # TODO May the force be with you
+    return sheep.count(True)
 
 # import codewars_test as test
 # from solution import count_sheeps
