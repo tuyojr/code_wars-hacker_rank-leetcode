@@ -14,7 +14,7 @@ def fake_bin(x):
         else:
             bin[j] = '1'
     return ''.join(bin)
-    
+    # return ''.join('0' if c < '5' else '1' for c in x)
 # import codewars_test as test
 # from solution import fake_bin
 
