@@ -3,7 +3,10 @@
 
 # [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 
+import math
 
+def grow(arr):
+    return math.prod(arr)
 
 # import codewars_test as test
 # from solution import grow
