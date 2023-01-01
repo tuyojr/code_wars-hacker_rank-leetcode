@@ -2,7 +2,14 @@
 # string with a murmur: "1 sheep...2 sheep...3 sheep...". 
 # Input will always be valid, i.e. no negative integers.
 
-
+def count_sheep(n):
+    # your code
+    result = ""
+    count = 1
+    while count <= n:
+        result += str(count) + " sheep..."
+        count += 1
+    return result
 
 # import codewars_test as test
 # from solution import count_sheep
