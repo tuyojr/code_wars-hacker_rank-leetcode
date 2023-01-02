@@ -1,5 +1,4 @@
 # Transpose
-
 # We can generate the transposition of an array using the tool numpy.transpose.
 # It will not affect the original array, but it will create a new array.
 
@@ -13,8 +12,8 @@
 # [[1 4]
 #  [2 5]
 #  [3 6]]
-# Flatten
 
+# Flatten
 # The tool flatten creates a copy of the input array flattened to one dimension.
 
 # import numpy
