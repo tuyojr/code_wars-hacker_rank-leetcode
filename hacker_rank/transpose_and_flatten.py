@@ -45,3 +45,23 @@
 # [[1 3]
 #  [2 4]]
 # [1 2 3 4]
+
+import numpy
+
+# create a variable to hold the final array
+final_array =[]
+
+# create variables to accept user input for number of rows and columns
+N, M = map(int, input().split())
+
+# loop through each row
+for values in range(N):
+
+    # update the final array with the numpy array module
+    final_array.append(numpy.array(input().split(), int))
+
+# convert the final array from a list to an array
+final_array = numpy.asarray(final_array)
+
+# print the transposed and flattened arrays
+print(numpy.transpose(final_array), final_array.flatten(), sep="\n")
