@@ -23,7 +23,15 @@
 
 # The middle character(s) of the word represented as a string.
 
-
+def get_middle(s):
+    # find the length of the string
+    length = len(s)
+    
+    # find the middle of the string
+    first_part = (length - 1) // 2
+    second_part = (length + 2) // 2
+    
+    return s[first_part:second_part]
 
 # import codewars_test as test
 # from solution import get_middle
