@@ -25,7 +25,15 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 # Pypy3
 if __name__ == '__main__':
+
+    # prompt the user for the number of input
     n = int(input())
+
+    # create the n-space separated integers
     integer_list = map(int, input().split())
+
+    # create a tuple from the input integers
     t = tuple(integer_list)
+
+    # compute and print the result of the hash
     print(hash(t))
