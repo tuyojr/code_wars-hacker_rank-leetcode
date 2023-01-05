@@ -25,3 +25,24 @@
 
 # Sample Output 0
 # hACKERrANK.COM PRESENTS "pYTHONIST 2".
+
+def swap_case(s):
+
+    # create an empty string variable to hold the swapped case
+    swapped = ''
+
+    # loop through each letter in the string
+    for letter in s:
+
+        # if the letter is in upper case, convert it to lowercase and updated the swapped case variable
+        # else, convert it to upper case and return the swapped case
+        if (letter.isupper()) == True:
+            swapped += (letter.lower())
+        else:
+            swapped += (letter.upper())
+    return swapped
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
