@@ -13,7 +13,15 @@
 # and spaces, but these will not appear at the beginning or end of 
 # the string. They will not contain numerals.
 
-
+def feast(beast, dish):
+    # your code here
+    first = [*beast]
+    second = [*dish]
+    
+    if (first[0] == second[0]) and (first[-1] == second[-1]):
+        return True
+    else:
+        return False
 
 # import codewars_test as test
 # from solution import feast
