@@ -12,3 +12,16 @@
 # each has at least two letters. beast and dish may contain hyphens 
 # and spaces, but these will not appear at the beginning or end of 
 # the string. They will not contain numerals.
+
+
+
+# import codewars_test as test
+# from solution import feast
+
+# @test.describe("Fixed Tests")
+# def fixed_tests():
+#     @test.it('Basic Test Cases')
+#     def basic_test_cases():
+#         test.assert_equals(feast("great blue heron", "garlic naan"), True)
+#         test.assert_equals(feast("chickadee", "chocolate cake"), True)
+#         test.assert_equals(feast("brown bear", "bear claw"), False)
