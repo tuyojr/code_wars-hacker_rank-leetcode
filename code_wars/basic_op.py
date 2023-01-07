@@ -12,8 +12,19 @@
 # ('*', 5, 5) --> 25
 # ('/', 49, 7) --> 7
 
-
-
+def basic_op(operator, value1, value2):
+    #your code here
+    if operator == '+':
+        return value1 + value2
+    elif operator == '-':
+        return value1 - value2
+    elif operator == '*':
+        return value1 * value2
+    elif operator == '/':
+        return value1 / value2
+    else:
+        return "Accepted operators are +, -, *, and /. Run the program again."
+        
 # import codewars_test as test
 # from solution import basic_op
 
