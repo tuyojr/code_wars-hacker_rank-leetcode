@@ -6,7 +6,9 @@
 # create the most creative hello world you can think of? What is a 
 # "hello world" solution you would want to show your friends?
 
-
+# Write a function `greet` that returns "hello world!"
+def greet():
+    return "hello world!"
 
 # import codewars_test as test
 # from solution import greet
