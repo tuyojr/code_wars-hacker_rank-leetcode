@@ -72,6 +72,9 @@
 
 if __name__ == '__main__':
     s = input()
+
+    # create a function to validate each condition
+
     def alphanum(s):
         for i in s:
             if i.isalnum():
@@ -85,18 +88,21 @@ if __name__ == '__main__':
                 return True
         return False
     print(alpha(s))
+
     def digit(s):
         for i in s:
             if i.isdigit():
                 return True
         return False
     print(digit(s))
+
     def lower(s):
         for i in s:
             if i.islower():
                 return True
         return False
     print(lower(s))
+
     def upper(s):
         for i in s:
             if i.isupper():
