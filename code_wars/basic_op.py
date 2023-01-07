@@ -24,7 +24,9 @@ def basic_op(operator, value1, value2):
         return value1 / value2
     else:
         return "Accepted operators are +, -, *, and /. Run the program again."
-        
+
+    # return eval(f"{value1}{operator}{value2}")
+
 # import codewars_test as test
 # from solution import basic_op
 
