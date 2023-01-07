@@ -7,7 +7,9 @@
 # name equals owner	    'Hello boss'
 # otherwise	            'Hello guest'
 
-
+def greet(name, owner):
+    # Add code here
+    return 'Hello boss' if (name == owner) else 'Hello guest'
 
 # import codewars_test as test
 # from solution import greet
