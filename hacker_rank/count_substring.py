@@ -38,3 +38,26 @@
 # range (0, 5)
 
 # Here, the range loops over 0 to 4. 5 is excluded.
+
+def count_substring(string, sub_string):
+
+    # create a count variable to track the total occurrences of the substring
+    count = 0
+
+    # loop through the string length
+    for i in range(len(string)):
+
+        # check if the string at each index is the same as the substring 
+        if string[i:i+len(sub_string)] == sub_string:
+
+            # increment the count variable if it is
+            count += 1
+    # return the count variable
+    return count
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
