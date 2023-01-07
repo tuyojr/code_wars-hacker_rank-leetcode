@@ -24,7 +24,9 @@
 # 2
 
 # Concept
-# Some string processing examples, such as these, might be useful.
+# Some string processing examples, such as these
+# http://www.thelearningpoint.net/computer-science/learning-python-programming-and-data-structures/learning-python-programming-and-data-structures--tutorial-12--string-manipulation
+# might be useful.
 # There are a couple of new concepts:
 # In Python, the length of a string is found by the function len(s), where s 
 # is the string.
