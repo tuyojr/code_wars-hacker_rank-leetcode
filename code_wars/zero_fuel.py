@@ -9,7 +9,12 @@
 
 # Function should return true if it is possible and false if not.
 
-
+def zero_fuel(distance_to_pump, mpg, fuel_left):
+    #Happy Coding! ;)
+    if distance_to_pump <= mpg * fuel_left:
+        return True
+    else:
+        return False
 
 # import codewars_test as test
 
