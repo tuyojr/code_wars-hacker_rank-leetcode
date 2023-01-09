@@ -13,7 +13,23 @@
 # "aA11" -> 2 ## 'a' and '1'
 # "ABBA" -> 2 ## 'A' and 'B' each occur twice
 
+def duplicate_count(text):
+    # Your code goes here
+    
+    # convert the whole string to lower case
+    text = text.lower()
 
+    # create a dictionary for all the characters in the string
+    letters = {}
+
+    # loop through the text and update the letters dictionary with each 
+    # letter and their number of occurrences
+    for letter in text:
+        letters[letter] = text.count(letter)
+    
+    # loop through the dictionary and return the length of keys whose value are
+    # greater than or equal to 2
+    return len([key for key, value in letters.items() if value >= 2])
 
 # import codewars_test as test
 # from solution import duplicate_count
