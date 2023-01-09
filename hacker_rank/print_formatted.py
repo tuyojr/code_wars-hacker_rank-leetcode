@@ -43,3 +43,25 @@
 #    15    17     F  1111
 #    16    20    10 10000
 #    17    21    11 10001
+
+def print_formatted(number):
+    # your code goes here
+
+    # create a variable to store the width of the binary value of number
+    # [2:] is to start from the number part, ignoring the '0b'
+    width = len(bin(number)[2:])
+
+    # loop through the range of the number starting from 1, through the length of the number + 1
+    # to account for index 0, since we are starting count from 1
+    for i in range(1, number + 1):
+
+        # print the columns in the order...
+        # - str(int) value of i when the loop runs, use .rjust(width) to position it the right
+        # - str(oct) value of i. [2:] ignores the 0o part
+        # - str(hex) value of i. [2:] ignores the 0x part and .upper converts the letters to uppercase
+        # - str(bin) value of i. [2:] ignores the 0b part
+        print(str(i).rjust(width), str(oct(i)[2:]).rjust(width), str(hex(i)[2:]).upper().rjust(width), str(bin(i)[2:]).rjust(width))
+
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)
