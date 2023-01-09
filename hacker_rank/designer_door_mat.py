@@ -52,3 +52,30 @@
 # ------.|..|..|..|..|.------
 # ---------.|..|..|.---------
 # ------------.|.------------
+
+if __name__ == '__main__':
+
+    # prompt the user for input of the mat specification
+    N, M = map(int, input().split())
+
+    # Top half
+
+    # loop through the range of the mat specification starting from 1, through
+    # the length N of the mat, and an increment(step) of 2 (account for the odd natural numbers)
+    for i in range(1, N, 2): 
+
+        # print the mat design using the center method to center the design
+        # ".|." * i prints each time the loop runs
+        # M is the width and '-' is the character to fill the width
+        print((".|." * i).center(M, "-"))
+    
+    # Middle
+
+    # print the welcome message using the center method to center the message
+    print("WELCOME".center(M, "-"))
+
+    # Bottom half
+
+    # loop through the range of the mat specification starting from the length in decreasing order
+    for i in range(N-2, -1, -2): 
+        print((".|." * i).center(M, "-"))
