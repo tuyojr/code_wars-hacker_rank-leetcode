@@ -77,3 +77,49 @@
 # ----e-d-c-d-e----
 # ------e-d-e------
 # --------e--------
+
+# import the string module
+import string
+
+def print_rangoli(size):
+    # your code goes here
+
+    # create a variable that holds all the letters
+    alpha = string.ascii_lowercase
+
+    # TOP and BOTTOM PART
+
+    # loop through the size in reverse order
+    for i in range(size-1, 0, -1):
+
+        # create a list that holds the size of the list
+        row = ['-'] * (size*2-1)
+
+        # loop through the size in reverse order
+        for j in range(size-i):
+
+            # set the value of the list to the letter for the top and bottom part
+            row[size-1-j] = alpha[i+j]
+            row[size-1+j] = alpha[i+j]
+
+        # print the joined the rows
+        print('-'.join(row))
+    
+
+    # MIDDLE
+
+    # loop through the size
+    for i in range(size):
+
+        # create a list that holds the size of the list
+        row = ['-'] * (size*2-1)
+
+        # loop through the size
+        for j in range(size-i):
+            row[size-1-j] = alpha[i+j]
+            row[size-1+j] = alpha[i+j]
+        print('-'.join(row))
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
