@@ -30,7 +30,33 @@
 # classes that I really recommend to any math enthusiast and for showing 
 # me this mathematical curiosity too with his usual contagious passion :)]
 
+def tribonacci(signature, n):
+    #your code here
 
+    # if the number of signatures required is 0, return an empty list
+    if n == 0:
+        return []
+
+    # if the number of signatures required is 1, return the first element in the signature list
+    elif n == 1:
+        return [signature[0]]
+
+    # if the number of signatures required is 2, return the first two elements
+    elif n == 2:
+        return [signature[0], signature[1]]
+
+    # if the number of signatures required is 3, return the first three elements
+    elif n == 3:
+        return [signature[0], signature[1], signature[2]]
+
+    # if the number of signatures required is greater than 3, loop through each element,
+    # starting with the initial signature list and stopping at the n numbers required
+    # for each iteration, update the signature list with the sum of the three elements required
+    # to get the next element in the list, and return the new signature list
+    else:
+        for i in range(3, n):
+            signature.append(signature[i-3] + signature[i-2] + signature[i-1])
+        return signature
 
 # test.describe("Basic tests")
 # test.assert_equals(tribonacci([1, 1, 1], 10), [1, 1, 1, 3, 5, 9, 17, 31, 57, 105])
