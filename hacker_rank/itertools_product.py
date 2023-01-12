@@ -58,9 +58,13 @@
 # Sample Output
 #  (1, 3) (1, 4) (2, 3) (2, 4)
 
+# import the product module from the itertools library
 from itertools import product
 
+# create a list of user inputs
 A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 
+# use the product module to get the cartesian product of the inputs 
+# and use the * to unpack the output 
 print(*product(A, B)) 
