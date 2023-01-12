@@ -1,4 +1,5 @@
 # itertools.permutations(iterable[, r])
+# https://docs.python.org/3/library/itertools.html
 
 # This tool returns successive r length permutations of elements 
 # in an iterable.
