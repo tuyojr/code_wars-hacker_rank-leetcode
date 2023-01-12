@@ -64,3 +64,21 @@
 
 # All possible size 2 permutations of the string "HACK" are printed in 
 # lexicographic sorted order.
+
+# import the permutations module from the itertools library.
+
+from itertools import permutations
+
+# get the input string and the number of permutations to be generated
+# from the user and
+name, permutation= input().split()
+
+# split the input string into a list of characters.
+S = list(sorted(name))
+
+# convert the number of permutations to an integer.
+k = int(permutation)
+
+# generate the permutations and print them.
+for i in permutations(S, k):
+    print(''.join(i))
