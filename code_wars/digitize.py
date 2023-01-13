@@ -6,7 +6,21 @@
 # 35231 => [1,3,2,5,3]
 # 0 => [0]
 
+def digitize(n):
+    # convert the number to a string
+    n = str(n)
 
+    # create an empty list
+    list = []
+
+    # loop through the string in reverse order
+    for i in range(len(n)-1, -1, -1):
+
+        # append the string to the list
+        list.append(int(n[i]))
+        
+    # return the list
+    return list
 
 # import codewars_test as test
 # from solution import digitize
