@@ -50,3 +50,24 @@
 # CH
 # CK
 # HK
+
+from itertools import combinations
+
+if __name__ == '__main__':
+
+    # get the input string and the number of combinations to be generated
+    # from the user and
+    name, combination = input().split()
+
+    # sort the string alphabetically
+    S = sorted(name)
+
+    # convert the number of combinations to an integer.
+    k = int(combination)
+
+    # loop through the combinations
+    for i in range(1, k+1):
+
+        # loop through each possible combination and print the output
+        for j in combinations(S, i):
+            print(''.join(j))
