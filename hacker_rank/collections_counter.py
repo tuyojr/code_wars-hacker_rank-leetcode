@@ -73,4 +73,46 @@
 # Customer 5: Purchased size 18 shoe for $60.
 # Customer 6: Size 10 not available, so no purchase.
 
-# Total money earned 55 + 45 + 40 + 60 = $200  
+# Total money earned 55 + 45 + 40 + 60 = $200
+
+from collections import Counter
+
+if __name__ == "__main__":
+    
+    # create a variable for the total number of shoes
+    X = int(input())
+    
+    # create a entry of all the available shoe sizes
+    shoe_sizes = list(map(int, input().split()))
+    
+    # create a variable of the total number of customers
+    N = int(input())
+    
+    # create a list of the customers shoe sizes and prices
+    customers = []
+    for i in range(N):
+        customers.append(list(map(int, input().split())))
+
+    # create a counter of the shoe sizes
+    shoe_sizes_counter = Counter(shoe_sizes)
+    
+    # create a variable for the total amount of money earned
+    total_amount = 0
+
+    # iterate through the customers list
+    for customer in customers:
+    
+        # if the customer's shoe size is in the shoe_sizes_counter
+        if customer[0] in shoe_sizes_counter:
+
+            # if the shoe size is available
+            if shoe_sizes_counter[customer[0]] > 0:
+
+                # add the price to the total money
+                total_amount += customer[1]
+
+                # subtract one from the shoe size counter
+                shoe_sizes_counter[customer[0]] -= 1
+            
+    # print the total money earned
+    print(total_amount)
