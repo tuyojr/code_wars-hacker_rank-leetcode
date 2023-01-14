@@ -16,7 +16,16 @@
 
 # findNb(91716553919377) --> -1
 
-
+def find_nb(m):
+    # your code
+    n = 1
+    while m > 0:
+        m -= n ** 3
+        n += 1
+    if m == 0:
+        return n - 1
+    else:
+        return -1
 
 # test.assert_equals(find_nb(4183059834009), 2022)
 # test.assert_equals(find_nb(24723578342962), -1)
