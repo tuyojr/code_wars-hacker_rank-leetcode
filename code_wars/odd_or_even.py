@@ -16,3 +16,16 @@
 # Input: [0, -1, -5]
 # Output: "even"
 # Have fun!
+
+
+
+# import codewars_test as test
+# from solution import odd_or_even
+
+# @test.describe("Fixed Tests")
+# def fixed_tests():
+#     @test.it('Basic Test Cases')
+#     def basic_test_cases():
+#         test.assert_equals(odd_or_even([0, 1, 2]), "odd")
+#         test.assert_equals(odd_or_even([0, 1, 3]), "even")
+#         test.assert_equals(odd_or_even([1023, 1, 2]), "even")
