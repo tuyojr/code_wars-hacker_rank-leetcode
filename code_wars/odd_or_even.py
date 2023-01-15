@@ -17,7 +17,11 @@
 # Output: "even"
 # Have fun!
 
-
+def odd_or_even(arr):
+    # your code here
+    if (sum(arr) %2 != 0):
+        return "odd"
+    return "even"
 
 # import codewars_test as test
 # from solution import odd_or_even
