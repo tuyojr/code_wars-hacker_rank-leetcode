@@ -76,3 +76,17 @@
 # the average.
 
 # Average = 1355/8 = 169.375
+
+def average(array):
+    # your code goes here
+    distinct = set(array)
+    length = len(distinct)
+    total = sum(distinct)
+    avg = total / length
+    return format(avg, '.3f')
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
