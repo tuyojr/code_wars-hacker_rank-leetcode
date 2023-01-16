@@ -9,3 +9,9 @@
 # XO("ooxXm") => true
 # XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 # XO("zzoo") => false
+
+
+
+# test.expect(xo('xo'), 'True expected')
+# test.expect(xo('xo0'), 'True expected')
+# test.expect(not xo('xxxoo'), 'False expected')
