@@ -23,3 +23,19 @@
 # dig_pow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
 # dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
 # dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+
+
+
+# from solution import dig_pow
+# import codewars_test as test
+
+# @test.describe("Fixed tests")
+# def fixed_test():
+#     @test.it("Samples")
+#     def sample_tests():
+#         test.assert_equals(dig_pow(89, 1), 1)
+#         test.assert_equals(dig_pow(92, 1), -1)
+#         test.assert_equals(dig_pow(46288, 3), 51)
+#         test.assert_equals(dig_pow(41, 5), 25)
+#         test.assert_equals(dig_pow(114, 3), 9)
+#         test.assert_equals(dig_pow(8, 3), 64)
