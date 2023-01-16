@@ -24,7 +24,30 @@
 # dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
 # dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 
+def dig_pow(n, p):
+    # your code
 
+    # convert n to a string
+    n_str = str(n)
+
+    # initialize a sum variable
+    sum = 0
+
+    # loop through the string
+    for i in range(len(n_str)):
+
+        # add the current digit to the sum variable
+        sum += int(n_str[i]) ** (p + i)
+
+    # check if the sum is divisible by n
+    if sum % n == 0:
+            
+            # return the quotient
+            return sum // n
+
+    # if not, return -1
+    else:
+        return -1
 
 # from solution import dig_pow
 # import codewars_test as test
