@@ -79,3 +79,17 @@
 # Explanation
 
 # The day on August 5th 2015 was WEDNESDAY.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import calendar
+
+if __name__ == '__main__':
+
+    # prompt the user to enter the date in MM DD YYYY format
+    month, day, year = map(int, input().split())
+
+    # print the day of the week in capital letters
+    # calendar.day_name returns the name of the day
+    # calendar.weekday returns the day of the week. it takes 3 arguments
+    print(calendar.day_name[calendar.weekday(year, month, day)].upper())
