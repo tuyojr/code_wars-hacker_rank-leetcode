@@ -14,7 +14,9 @@
 
 # Note: In COBOL, it should return "found the needle at position 6"
 
-
+def find_needle(haystack):
+    # your code here
+    return 'found the needle at position ' + str(haystack.index('needle'))
 
 # import codewars_test as test
 # from solution import find_needle
