@@ -52,3 +52,17 @@
 # Explanation
 
 # UK and France repeat twice. Hence, the total number of distinct country stamps is 5 (five).
+
+if __name__ == '__main__':
+    
+    # Variable for the total number of country stamps
+    N = int(input())
+    stamps = set('')
+
+    # Loop through the range of N to accept the country names
+    for country in range(N):
+
+        # Add the country name to the set
+        stamps.add(input())
+    
+    print(len(stamps))
