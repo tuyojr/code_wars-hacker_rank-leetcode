@@ -39,3 +39,18 @@
 # Sample Output
 
 # 45°
+
+import math
+
+if __name__ == '__main__':
+    AB = int(input())
+    BC = int(input())
+
+    # Calculate the hypotenuse
+    AC = math.sqrt(AB**2 + BC**2)
+
+    # Calculate the angle
+    angleMBC = round(math.degrees(math.acos(BC/AC)))
+
+    # Print the angle
+    print(str(angleMBC) + "°") # print(str(angleMBC) + chr(176))
