@@ -4,7 +4,23 @@
 
 # The input string will only consist of lower case letters and/or spaces.
 
-
+def get_count(sentence):
+    
+    # create a count variable for the vowels in the sentence
+    num_vowels = 0
+    
+    # create a list of possible vowels
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    
+    # loop through each letter in the sentence
+    for char in sentence:
+        
+        # if the lette is in the vowels list, update the count variable
+        if char in vowels:
+            num_vowels += 1
+    
+    # return the total variable count
+    return num_vowels
 
 # import codewars_test as test
 # from solution import get_count
