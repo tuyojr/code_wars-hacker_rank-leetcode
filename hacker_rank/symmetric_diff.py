@@ -128,3 +128,29 @@
 # 9
 # 11
 # 12
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    
+    # Get the number of elements in set a.
+    M = int(input())
+    
+    # Get the elements of set a.
+    a = set(map(int, input().split()))
+    
+    # Get the number of elements in set b.
+    N = int(input())
+    
+    # Get the elements of set b.
+    b = set(map(int, input().split()))
+    
+    # Get the symmetric difference of set a and set b.
+    c = a.symmetric_difference(b)
+    
+    # Sort the symmetric difference of set a and set b.
+    c = sorted(c)
+    
+    # Print the symmetric difference of set a and set b.
+    for i in c:
+        print(i)
