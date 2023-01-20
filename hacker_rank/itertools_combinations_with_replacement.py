@@ -53,3 +53,23 @@
 # HH
 # HK
 # KK
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# import the combinations_with_replacement from itertools
+from itertools import combinations_with_replacement
+
+if __name__ == '__main__':
+    
+    # get the string and number of combinations input
+    name, combinations = input().split()
+    
+    # Sort the string alphabetically
+    S = sorted(name)
+    
+    # convert the input number of combinations to an integer
+    k = int(combinations)
+
+    # generate the combinations with replacement and print them
+    for i in combinations_with_replacement(S, k):
+        print(''.join(i))
