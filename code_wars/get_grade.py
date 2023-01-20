@@ -12,7 +12,21 @@
 # Tested values are all between 0 and 100. Theres is no need to check 
 # for negative values or values greater than 100.
 
-
+def get_grade(s1, s2, s3):
+    # Code here
+    total = s1 + s2 + s3
+    average = total/3
+    
+    if (90 <= average <= 100):
+        return "A"
+    elif (80 <= average <= 90):
+        return "B"
+    elif (70 <= average <= 80):
+        return "C"
+    elif (60 <= average <= 70):
+        return "D"
+    else:
+        return "F"
 
 # import codewars_test as test
 # from solution import get_grade
