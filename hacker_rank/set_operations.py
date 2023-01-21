@@ -100,3 +100,29 @@
 # Note: Convert the elements of set s to integers while you 
 # are assigning them. To ensure the proper input of the set, 
 # we have added the first two lines of code to the editor.
+
+# prompt the user to enter the number of elements in the set
+n = int(input())
+
+# prompt the user to enter the elements of the set
+s = set(map(int, input().split()))
+
+# prompt the user to enter the number of commands
+N = int(input())
+
+# iterate through the commands
+for i in range(N):
+
+    # prompt the user to enter the command
+    command = input().split()
+
+    # execute the commands
+    if command[0] == 'pop':
+        s.pop()
+    elif command[0] == 'remove':
+        s.remove(int(command[1]))
+    elif command[0] == 'discard':
+        s.discard(int(command[1]))
+
+# print the sum of the elements of the set
+print(sum(s))
