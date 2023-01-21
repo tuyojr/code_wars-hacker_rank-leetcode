@@ -61,3 +61,46 @@
 # [6, 5, 10]
 # [1, 5, 9, 10]
 # [9, 5, 1]
+
+if __name__ == '__main__':
+    
+    # prompt the user for the number of commands
+    N = int(input())
+
+    # initialize an empty list
+    arr = []
+
+    # iterate through the commands
+    for i in range(N):
+        command = input().split()
+
+        # insert i e: Insert integer e at position i.
+        if command[0] == 'insert':
+            arr.insert(int(command[1]), int(command[2]))
+        
+        # print: Print the list.
+        elif command[0] == 'print':
+            print(arr)
+        
+        # remove e: Delete the first occurrence of integer e.
+        elif command[0] == 'remove':
+            arr.remove(int(command[1]))
+        
+        # append e: Insert integer e at the end of the list.
+        elif command[0] == 'append':
+            arr.append(int(command[1]))
+        
+        # sort: Sort the list.
+        elif command[0] == 'sort':
+            arr.sort()
+        
+        # pop: Pop the last element from the list.
+        elif command[0] == 'pop':
+            arr.pop()
+        
+        # reverse: Reverse the list.
+        elif command[0] == 'reverse':
+            arr.reverse()
+        
+        else:
+            print('Invalid command.')
