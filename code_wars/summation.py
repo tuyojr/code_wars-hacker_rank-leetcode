@@ -8,7 +8,8 @@
 # 2 -> 3 (1 + 2)
 # 8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
 
-
+def summation(num):
+    return sum(range(1, num + 1))
 
 # import codewars_test as test
 # from solution import summation
