@@ -37,3 +37,24 @@
 
 # Also, note the single space within each compression and between 
 # the compressions.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from itertools import groupby
+
+if __name__ == '__main__':
+
+    # prompt the user for input
+    S = input()
+
+    # groupby() returns a tuple of the key and the group
+    # the key is the first element of the tuple
+    # the group is the second element of the tuple
+    # the group is a list of the elements in the group
+    # the groupby() function groups the elements in the list
+    # by the key
+    for k, g in groupby(S):
+
+        # print the length of the group and the key
+        # the end=' ' argument prints the output on the same line
+        print('({}, {})'.format(len(list(g)), k), end=' ')
