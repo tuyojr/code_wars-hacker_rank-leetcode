@@ -71,3 +71,14 @@
 # Roll numbers of students who have at least one subscription:
 # 1,2,3,4,5,6,7,8,9,10,11,21 and 55. Roll numbers: 1,2,3,6 and 8 are in both sets 
 # so they are only counted once. Hence, the total is 13 students.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+if __name__ == '__main__':
+    
+    n = int(input())
+    english = set(map(int, input().split()))
+    
+    b = int(input())
+    french = set(map(int, input().split()))
+    
+    print(len(english|french))
