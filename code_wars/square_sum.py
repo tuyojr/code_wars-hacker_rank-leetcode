@@ -3,7 +3,14 @@
 
 # For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
-
+def square_sum(numbers):
+    # your code here
+    squared = list()
+    
+    for i in numbers:
+        squared.append(i*i)
+    return sum(squared)
+    # return sum([x**2 for x in numbers])
 
 # import codewars_test as test
 # from solution import square_sum
