@@ -54,3 +54,28 @@
 # the indices that contain the letter 'a'.
 
 # Hence, the answer is 5/6.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import combinations
+
+if __name__ == '__main__':
+
+    # prompt the user for the number of letters in the list
+    N = int(input())
+
+    # prompt the user for the list of letters
+    a = input().split()
+
+    # prompt the user for the number of indices to be selected
+    K = int(input())
+
+    # create a count variable for the number of letters we're looking out for in the list
+    count = 0
+
+    # iterate through the list of letters and count the number of times the letter 'a' appears
+    for i in combinations(a, K):
+        if 'a' in i:
+            count += 1
+
+    # print the probability that at least one of the K indices selected contains the letter:'a'    
+    print(count/len(list(combinations(a, K))))
