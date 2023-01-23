@@ -11,7 +11,28 @@
 # alphabet_position("The sunset sets at twelve o' clock.")
 # Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" ( as a string )
 
+def alphabet_position(text):
 
+    # create a variable for all the alphabets
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+    # convert the text to lower case
+    text = text.lower()
+
+    # create a list to store the result
+    result = []
+
+    # loop through the text
+    for letter in text:
+
+        # check if the letter is in the alphabet variable
+        if letter in alphabet:
+
+            # if it is, append the index of the letter + 1 to the result list
+            result.append(str(alphabet.index(letter) + 1))
+
+    # return the result list as a string
+    return " ".join(result)
 
 # from random import randint
 # test.assert_equals(alphabet_position("The sunset sets at twelve o' clock."), "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11")
