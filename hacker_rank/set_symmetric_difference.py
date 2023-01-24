@@ -70,3 +70,21 @@
 # The roll numbers of students who have both subscriptions:
 # 1, 2, 3, 6 and 8.
 # Hence, the total is 5 students.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    
+    # number of students subscribed to English papers
+    n = int(input())
+    
+    # students subscribed to english papers
+    english = set(map(int, input(). split()))
+    
+    # number of students subscribed to French papers
+    b = int(input())
+    
+    # students subscribed to french papers
+    french = set(map(int, input(). split()))
+
+    print(len(english^french))
