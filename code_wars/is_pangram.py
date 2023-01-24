@@ -7,7 +7,20 @@
 # Given a string, detect whether or not it is a pangram. Return 
 # True if it is, False if not. Ignore numbers and punctuation.
 
+def is_pangram(s):
 
+    # create a string of all the letters in the alphabet
+    alphabets = "abcdefghijklmnopqrstuvwxyz"
+
+    # loop through the string of alphabets
+    for letter in alphabets:
+
+        # if the letter is not in the string s, return False
+        if letter not in s.lower():
+            return False
+    
+    # if the loop completes, return True
+    return True
 
 # from solution import is_pangram
 # import codewars_test as test
