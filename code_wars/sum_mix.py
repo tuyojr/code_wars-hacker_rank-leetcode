@@ -3,7 +3,18 @@
 
 # Return your answer as a number.
 
-
+def sum_mix(arr):
+    # Your code here
+    # create a list to hold the numbers
+    num_list = []
+    
+    # loop through the array
+    for num in arr:
+        # convert the string to an integer and add it to the list
+        num_list.append(int(num))
+    
+    # return the sum of the numbers in the list
+    return sum(num_list)
 
 # import codewars_test as test
 # from solution import sum_mix
