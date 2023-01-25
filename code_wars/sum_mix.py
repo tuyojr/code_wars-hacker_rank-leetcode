@@ -16,6 +16,9 @@ def sum_mix(arr):
     # return the sum of the numbers in the list
     return sum(num_list)
 
+    # # one line solution
+    # return sum(map(int, arr))
+
 # import codewars_test as test
 # from solution import sum_mix
 
