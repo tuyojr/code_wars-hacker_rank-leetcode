@@ -27,7 +27,41 @@
 
 # Enjoy it!!
 
+def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
+    # your code here
 
+    # create a list of numbers in the range
+    num_list = list(range(a, b + 1))
+
+    # create a list to hold the numbers that meet the criteria
+    sum_list = []
+
+    # loop through the list of numbers
+    for num in num_list:
+
+        # convert the number to a string
+        num_str = str(num)
+
+        # create a list to hold the digits of the number
+        num_digits = []
+
+        # loop through the string and add the digits to the list
+        for digit in num_str:
+            num_digits.append(int(digit))
+
+        # create a list to hold the sum of the digits raised to the power of their index
+        sum_digits = []
+
+        # loop through the digits and raise them to the power of their index
+        for i in range(len(num_digits)):
+            sum_digits.append(num_digits[i] ** (i + 1))
+
+        # if the sum of the digits raised to the power of their index equals the number
+        # add the number to the sum_list
+        if sum(sum_digits) == num:
+            sum_list.append(num)
+        
+    return sum_list
 
 # from solution import sum_dig_pow
 # import codewars_test as test
