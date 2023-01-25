@@ -8,6 +8,9 @@ def bool_to_word(boolean):
     elif (boolean == False):
         return "No"
 
+    # # one line solution
+    # return "Yes" if bool else "No" 
+
 # import codewars_test as test
 # from solution import bool_to_word
 
