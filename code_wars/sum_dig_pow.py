@@ -62,6 +62,7 @@ def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
             sum_list.append(num)
         
     return sum_list
+    # return [x for x in range(a, b+1) if sum(int(d)**i for i, d in enumerate(str(x), 1)) == x]
 
 # from solution import sum_dig_pow
 # import codewars_test as test
