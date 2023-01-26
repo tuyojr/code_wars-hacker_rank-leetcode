@@ -5,7 +5,11 @@
 
 # "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
 
-
+def string_to_array(s):
+    # your code here
+    # split the string into an array of words
+    arr = s.split(' ')
+    return arr
 
 # import codewars_test as test
 # from solution import string_to_array
