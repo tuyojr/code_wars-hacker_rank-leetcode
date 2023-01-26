@@ -30,3 +30,15 @@
 # 4710194409608608369201743232
 
 # Note: This result is bigger than 2^63 - 1. Hence, it won't fit even in int of C++ or a 64-bit integer.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    d = int(input())
+    e = a**b
+    f = c**d
+    g = e + f
+    print(g)
