@@ -4,7 +4,26 @@
 
 # (In this case, all triangles must have surface greater than 0 to be accepted).
 
+def is_triangle(a, b, c):
 
+    # check if the sum of any two sides is greater than the third side
+    if a + b > c and a + c > b and b + c > a:
+
+        # if so, check if any side is 0
+        if a == 0 or b == 0 or c == 0:
+            return False
+
+        # if not, check if any side is negative
+        elif a < 0 or b < 0 or c < 0:
+            return False
+
+        # if not, return True
+        else:
+            return True
+
+    # if not, return False
+    else:
+        return False
 
 # import codewars_test as test
 # from solution import is_triangle
