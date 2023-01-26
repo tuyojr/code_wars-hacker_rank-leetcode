@@ -14,7 +14,15 @@
 # Testing: [1, 0, 1, 1] ==> 11
 # However, the arrays can have varying lengths, not just limited to 4.
 
+def binary_array_to_number(arr):
+    # your code
 
+    # convert the array of ones and zeroes to a string
+    joined_arr = ''.join(str(i) for i in arr)
+    
+    # convert the string to an integer
+    arr = int(joined_arr, base=2)
+    return arr
 
 # import codewars_test as test
 # from solution import binary_array_to_number
