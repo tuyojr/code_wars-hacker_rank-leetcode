@@ -29,4 +29,4 @@
 # Sample Output
 # 4710194409608608369201743232
 
-# Note: This result is bigger than 2^63 - 1. Hence, it won't fit even in a 64-bit integer.
+# Note: This result is bigger than 2^63 - 1. Hence, it won't fit even in int of C++ or a 64-bit integer.
