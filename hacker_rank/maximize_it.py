@@ -48,3 +48,37 @@
 
 # Picking 5 from the 1st list, 9 from the 2nd list and 10 from the 3rd list gives the
 # maximum S value equal to (5^2 + 9^2 + 10^2)%1000 = 206.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+# Import the product module from itertools library
+from itertools import product
+
+
+# Get the input from the user
+K, M = map(int, input().split())
+
+# create an empty list to store the input
+N = []
+
+# Update the list with input values
+for i in range(K):
+    N.append(list(map(int, input().split()))[1:])
+
+# create a variable to store the maximum value of the 
+# sum of the squares of the elements of the list
+results = 0
+
+# iterate through the list
+for i in product(*N):
+    
+    # Get the sum of the squares of the elements of the list
+    a = sum(j**2 for j in i)
+
+    # Get the maximum value of the sum of the squares of the elements
+    # of the list
+    results = max(results, a%M)
+
+# Print the maximum value of the sum of the squares of the elements
+# of the list
+print(results)
