@@ -97,3 +97,38 @@
 # set A = set([1, 2, 3, 4, 5, 6, 8, 9])
 
 # The sum of elements in set  after these operations is 38.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    
+    # Get the number of elements in set A
+    n = int(input())
+    
+    # Get the space separated list of elements in set A
+    A = set(map(int, input().split()))
+    
+    # Get the number of other input sets
+    N = int(input())
+    
+    # iterate over the other input sets
+    for _ in range(N):
+        
+        # Get the operation name and the length of the other set
+        mutation, length = input().split()
+        
+        # Get the space separated list of elements in the other input set
+        input_set = set(map(int, input().split()))
+        
+        # Perform the mutations
+        if mutation == "intersection_update":
+            A &= input_set
+        elif mutation == "update":
+            A |= input_set
+        elif mutation == "symmetric_difference_update":
+            A ^= input_set
+        elif mutation == "difference_update":
+            A -= input_set
+            
+    # Print the sum of elements in set A
+    print(sum(A))
