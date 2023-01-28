@@ -67,3 +67,25 @@ if __name__ == '__main__':
     for key, value in d.items():
         if value == 1:
             print(key)
+
+# if __name__ == '__main__':
+
+#     # create a variable to store the size of each group
+#     K = int(input())
+    
+#     # create a list for the room numbers
+#     unordered_room_numbers = list(map(int, input().split()))
+
+#     # create a set to hold all the room numbers of group members
+#     s = set()
+
+#     # loop through the unordered room numbers and update the set
+#     # with the number of times they appear
+#     for room in unordered_room_numbers:
+#         if room in s:
+#             s.remove(room)
+#         else:
+#             s.add(room)
+
+#     # print the captain's room
+#     print(s.pop())
