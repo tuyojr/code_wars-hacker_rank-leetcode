@@ -30,7 +30,32 @@
 # Julia: nothing
 # Nim: none(int) (See options) https://nim-lang.org/docs/options.html
 
+def first_non_consecutive(arr):
+    #your code here
 
+    # create a variable to store the first non-consecutive number
+    first_non_consecutive_number = None
+
+    # create a variable to store the previous number
+    previous_number = arr[0]
+
+    # loop through the array
+    for number in arr[1:]:
+
+        # if the current number is not consecutive
+        if number != previous_number + 1:
+
+            # set the first non-consecutive number
+            first_non_consecutive_number = number
+
+            # break out of the loop
+            break
+
+        # set the previous number
+        previous_number = number
+
+    # return the first non-consecutive number
+    return first_non_consecutive_number
 
 # import codewars_test as test
 # from solution import first_non_consecutive
