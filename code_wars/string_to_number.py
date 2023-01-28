@@ -15,7 +15,9 @@
 # "1405" --> 1405
 # "-7" --> -7
 
-
+def string_to_number(s):
+    # your code here
+    return int(s)
 
 # import codewars_test as test
 # from solution import string_to_number
