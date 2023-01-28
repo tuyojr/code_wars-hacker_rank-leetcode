@@ -44,3 +44,26 @@
 # be 6 groups of families.
 # In the given list, all of the numbers repeat 5 times except for room number 8.
 # Hence, 8 is the Captain's room number.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    # create a variable to store the size of each group
+    K = int(input())
+    
+    # create a list for the room numbers
+    unordered_room_numbers = list(map(int, input().split()))
+
+    # create a dictionary to hold all the room numbers of group members
+    d = dict()
+
+    # loop through the unordered room numbers and update the dictionary
+    # with the number of times they appear
+    for room in unordered_room_numbers:
+        d[room] = d.get(room, 0) + 1
+
+    # loop through the dictionary to get a key that has a value of 1
+    # this will be the captain's room
+    for key, value in d.items():
+        if value == 1:
+            print(key)
