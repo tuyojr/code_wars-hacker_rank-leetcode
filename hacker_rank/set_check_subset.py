@@ -106,3 +106,31 @@
 
 # All the elements of set A are the elements of set B.
 # Hence, set A is a subset of set B.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+
+    # create a variable to store the number of test cases
+    T = int(input())
+
+    # loop through the test cases
+    for i in range(T):
+
+        # create a variable to store the number of elements in set A
+        num_elements_in_set_A = int(input())
+
+        # create a set to store the elements of set A
+        set_A = set(map(int, input().split()))
+
+        # create a variable to store the number of elements in set B
+        num_elements_in_set_B = int(input())
+
+        # create a set to store the elements of set B
+        set_B = set(map(int, input().split()))
+
+        # check if set A is a subset of set B
+        if set_A.issubset(set_B):
+            print(True)
+        else:
+            print(False)
