@@ -14,7 +14,38 @@
 # languages. If you read "...It Should encode XXX", the "XXX" is the 
 # expected result, not the input!
 
+def duplicate_encode(word):
+    #your code here
 
+    # create a dictionary to store the count of each character
+    char_count = {}
+
+    # iterate through the word
+    for char in word.lower():
+
+        # if the character is not in the dictionary, add it
+        if char not in char_count:
+            char_count[char] = 1
+
+        # if the character is in the dictionary, increment its count
+        else:
+            char_count[char] += 1
+
+    # create a new string to store the encoded word
+    encoded_word = ""
+
+    # iterate through the word
+    for char in word.lower():
+            
+            # if the character appears more than once, add a closing parenthesis
+            if char_count[char] > 1:
+                encoded_word += ")"
+    
+            # if the character appears only once, add an opening parenthesis
+            else:
+                encoded_word += "("
+
+    return encoded_word
 
 # import codewars_test as test
 # from solution import duplicate_encode
