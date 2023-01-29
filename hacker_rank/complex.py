@@ -66,40 +66,53 @@
 import math
 
 class Complex(object):
+
+    # create the __init__ method and set commands to be executed anytime
+    # an object of this class is created
     def __init__(self, real, imaginary):
 
-        # set the self.real
+        # set the self.real so we can access the "real" argument/attribute
         self.real = real
 
-        # set the self.imaginary
+        # set the self.imaginary so we can access the "imaginary" argument/attribute
         self.imaginary = imaginary
 
-    def __add__(self, no):
+    # create the __add__ method and set commands to be executed anytime
+    # the "+" operator is used on two objects of this class
+    def __add__(self, num):
 
         # add the real and imaginary parts of the two complex numbers
         # and return the result
-        return Complex(self.real + no.real, self.imaginary + no.imaginary)
+        return Complex(self.real + num.real, self.imaginary + num.imaginary)
 
-    def __sub__(self, no):
+    # create the __sub__ method and set commands to be executed anytime
+    # the "-" operator is used on two objects of this class
+    def __sub__(self, num):
 
         # subtract the real and imaginary parts of the two complex numbers
         # and return the result
-        return Complex(self.real - no.real, self.imaginary - no.imaginary)
+        return Complex(self.real - num.real, self.imaginary - num.imaginary)
 
-    def __mul__(self, no):
+    # create the __mul__ method and set commands to be executed anytime
+    # the "*" operator is used on two objects of this class
+    def __mul__(self, num):
 
         # multiply the real and imaginary parts of the two complex numbers
         # and return the result
-        return Complex(self.real * no.real - self.imaginary * no.imaginary,
-                       self.real * no.imaginary + self.imaginary * no.real)
+        return Complex(self.real * num.real - self.imaginary * num.imaginary,
+                       self.real * num.imaginary + self.imaginary * num.real)
 
-    def __truediv__(self, no):
+    # create the __truediv__ method and set commands to be executed anytime
+    # the "/" operator is used on two objects of this class
+    def __truediv__(self, num):
 
         # divide the real and imaginary parts of the two complex numbers
         # and return the result
-        return Complex((self.real * no.real + self.imaginary * no.imaginary) / (no.real ** 2 + no.imaginary ** 2),
-                       (self.imaginary * no.real - self.real * no.imaginary) / (no.real ** 2 + no.imaginary ** 2))
+        return Complex((self.real * num.real + self.imaginary * num.imaginary) / (num.real ** 2 + num.imaginary ** 2),
+                       (self.imaginary * num.real - self.real * num.imaginary) / (num.real ** 2 + num.imaginary ** 2))
 
+    # create the mod method and set commands to be executed anytime
+    # the "mod" method is used on an object of this class
     def mod(self):
 
         # return the modulus of the complex number
