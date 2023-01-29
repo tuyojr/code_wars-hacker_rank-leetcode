@@ -47,6 +47,9 @@ def duplicate_encode(word):
 
     return encoded_word
 
+    # one line solution
+    # return "".join(["(" if word.lower().count(char) == 1 else ")" for char in word.lower()])
+
 # import codewars_test as test
 # from solution import duplicate_encode
 
