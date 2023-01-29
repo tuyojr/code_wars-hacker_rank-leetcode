@@ -44,3 +44,19 @@
 # Set A is the strict superset of the set([1,2,3,4,5]) but not of the 
 # set([100,11,12]) because 100 is not in set A.
 # Hence, the output is False.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    
+    # input the set A elements
+    A = set(map(int, input().split()))
+
+    # input the number of other sets
+    n = int(input())
+
+    # input the other sets
+    new_set = [set(map(int, input().split())) for _ in range(n)]
+
+    # check if A is a strict superset of each of the N sets
+    print(all(A > otherSet for otherSet in new_set))
