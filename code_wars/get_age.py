@@ -7,7 +7,8 @@
 # the test input may be "1 year old" or "5 years old". The first 
 # character in the string is always a number.
 
-
+def get_age(age):
+    return int(age[0])
 
 # import codewars_test as test
 # from solution import get_age
