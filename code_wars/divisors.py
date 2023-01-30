@@ -10,3 +10,19 @@
 # Note you should only return a number, the count of divisors. 
 # The numbers between parentheses are shown only for you to see 
 # which numbers are counted in each case.
+
+
+
+# import codewars_test as test
+# from solution import divisors
+
+# @test.describe("Fixed Tests")
+# def fixed_tests():
+#     @test.it('Basic Test Cases')
+#     def basic_test_cases():
+#         test.assert_equals(divisors(1), 1) 
+#         test.assert_equals(divisors(4), 3)
+#         test.assert_equals(divisors(5), 2)
+#         test.assert_equals(divisors(12), 6)
+#         test.assert_equals(divisors(30), 8)
+#         test.assert_equals(divisors(4096), 13)
