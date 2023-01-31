@@ -91,3 +91,26 @@
 # Marks obtained by student 5: 80, 86, 90.5
 # Average marks of student 5:
 # 256.5 / 3 = 85.5
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    
+    # prompt the user for input
+    N, X = map(int, input().split())
+
+    # create a list of lists that contains the marks for a student
+    # in a particular subject
+    marks = []
+
+    # iterate over the number of subjects
+    for _ in range(X):
+
+        # append the marks for a student in a particular subject
+        marks.append(list(map(float, input().split())))
+
+    # iterate over the number of students
+    for student in zip(*marks):
+            
+        # print the average of the marks for a student in all subjects
+        print(sum(student) / len(student))
