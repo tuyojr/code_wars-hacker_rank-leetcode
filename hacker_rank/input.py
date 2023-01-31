@@ -48,3 +48,11 @@
 
 # P(1) = 1**3 + 1**2 + 1 + 1 = 4 = k
 # Hence, the output is True.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    
+    x, k = list(map(int, input().split()))
+    
+    print(eval(input()) == k)
