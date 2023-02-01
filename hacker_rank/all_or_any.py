@@ -63,5 +63,5 @@
 
 if __name__ == '__main__':
     N = int(input())
-    n = map(int, input().split())
-    print(all([num > 0 for num in n]) and any([str(num) == str(num)[::-1] for num in n]))
+    numbers = list(map(int, input().split()))
+    print(all([num > 0 for num in numbers]) and any([str(num) == str(num)[::-1] for num in numbers]))
