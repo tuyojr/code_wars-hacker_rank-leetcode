@@ -1,4 +1,5 @@
 # any()
+# https://docs.python.org/3/library/functions.html#any
 # This expression returns True if any element of the iterable is true.
 # If the iterable is empty, it will return False.
 
@@ -8,7 +9,9 @@
 # True
 # >>> any([1<0,2<1,3<2])
 # False
+
 # all()
+# https://docs.python.org/3/library/functions.html#all
 # This expression returns True if all of the elements of the iterable are 
 # true. If the iterable is empty, it will return True.
 
@@ -22,6 +25,7 @@
 
 # You are given a space separated list of integers. If all the integers 
 # are positive, then you need to check if any integer is a palindromic integer.
+# https://en.wikipedia.org/wiki/Palindromic_number
 
 # Input Format
 
@@ -54,3 +58,10 @@
 # Hence, the output is True.
 # Can you solve this challenge in 3 lines of code or less?
 # There is no penalty for solutions that are correct but have more than 3 lines.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == '__main__':
+    N = int(input())
+    n = map(int, input().split())
+    print(all([num > 0 for num in n]) and any([str(num) == str(num)[::-1] for num in n]))
