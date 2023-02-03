@@ -55,3 +55,39 @@
 # Explanation 0
 
 # The details are sorted based on the second attribute, since K is zero-indexed.
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+def sort_func(value):
+
+    # value is a list of integers
+    # this returns the item at the k position in the list
+    return value[k]
+
+if __name__ == '__main__':
+    nm = input().split()
+
+    n = int(nm[0])
+
+    m = int(nm[1])
+
+    arr = []
+
+    for _ in range(n):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    k = int(input())
+
+    # this sorts the list of lists by the kth item in each list
+    arr.sort(key=sort_func)
+
+    # loop through the list of lists and print each item in the list
+    for i in range(n):
+
+        print(*arr[i])
