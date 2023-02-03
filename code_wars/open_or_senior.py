@@ -26,10 +26,10 @@ def open_or_senior(data):
     category = []
 
     # loop through data
-    for info in data:
+    for (age, handicap) in data:
 
         # if age is greater than or equal to 55 and handicap is greater than 7
-        if info[0] >= 55 and info[1] > 7:
+        if age >= 55 and handicap > 7:
 
             # append Senior to category
             category.append("Senior")
