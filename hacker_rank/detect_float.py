@@ -56,3 +56,11 @@
 # -1.00: is valid.
 # +4.54: is valid.
 # SomeRandomStuff: is not a number.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+
+if __name__ == '__main__':
+    
+    for _ in range(int(input())):
+        print(bool(re.match(r'^[+-]?\d*\.\d+$', input())))
