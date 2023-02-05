@@ -41,6 +41,9 @@ def dna_to_rna(dna):
     # return the string of rna bases
     return rna
 
+    # one line solution
+    # return dna.replace('T', 'U')
+
 # import codewars_test as test
 # from solution import dna_to_rna
 
