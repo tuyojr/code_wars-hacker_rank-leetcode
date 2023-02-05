@@ -17,7 +17,29 @@
 # be empty. All input is guaranteed to be valid, i.e. each input string 
 # will only ever consist of 'G', 'C', 'A' and/or 'T'.
 
+def dna_to_rna(dna):
+    # create a list of dna bases
+    dna_list = list(dna)
 
+    # create a list of rna bases
+    rna_list = []
+
+    # loop through the list of dna bases
+    for base in dna_list:
+
+        # if the base is a 'T', replace it with an 'U'
+        if base == 'T':
+            rna_list.append('U')
+
+        # otherwise, append the base to the list of rna bases
+        else:
+            rna_list.append(base)
+
+    # join the list of rna bases into a string
+    rna = ''.join(rna_list)
+
+    # return the string of rna bases
+    return rna
 
 # import codewars_test as test
 # from solution import dna_to_rna
