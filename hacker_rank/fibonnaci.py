@@ -52,3 +52,23 @@
 # Explanation
 
 # The first  fibonacci numbers are [0, 1, 1, 2, 3], and their cubes are [0, 1, 1, 8, 27].
+
+# complete the lambda function 
+cube = lambda x: x**3
+
+def fibonacci(n):
+    # return a list of fibonacci numbers
+    fib = [0, 1]
+
+    # loop through the list of fibonacci numbers starting from 2 to n
+    for i in range(2, n):
+
+        # append the sum of the previous two numbers to the list
+        fib.append(fib[i-1] + fib[i-2])
+
+    # return the list of fibonacci numbers from 0 to n
+    return fib[:n]
+
+if __name__ == '__main__':
+    n = int(input())
+    print(list(map(cube, fibonacci(n))))
