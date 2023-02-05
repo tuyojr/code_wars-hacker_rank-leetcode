@@ -16,3 +16,16 @@
 # The input string can be of arbitrary length - in particular, it may 
 # be empty. All input is guaranteed to be valid, i.e. each input string 
 # will only ever consist of 'G', 'C', 'A' and/or 'T'.
+
+
+
+# import codewars_test as test
+# from solution import dna_to_rna
+
+# @test.describe("Sample Tests")
+# def basic_tests():
+#     @test.it('Basic Test Cases')
+#     def basic_test_cases():
+#         test.assert_equals(dna_to_rna("TTTT"), "UUUU")
+#         test.assert_equals(dna_to_rna("GCAT"), "GCAU")
+#         test.assert_equals(dna_to_rna("GACCGCCGCC"), "GACCGCCGCC")
