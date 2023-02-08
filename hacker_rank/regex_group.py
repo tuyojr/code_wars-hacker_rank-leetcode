@@ -68,3 +68,21 @@
 # .. is the first repeating character, but it is not alphanumeric.
 # 1 is the first (from left to right) alphanumeric repeating character 
 # of the string in the substring 111.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+if __name__ == '__main__':
+
+    # enter the numbers
+    s = input()
+
+    # find the first alphanumeric character that has consecutive repetitions
+    m = re.search(r'([a-zA-Z0-9])\1+', s)
+
+    # print the result
+    if m:
+        print(m.group(1))
+    else:
+        print(-1)
