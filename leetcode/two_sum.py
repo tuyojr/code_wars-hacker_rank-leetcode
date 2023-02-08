@@ -32,3 +32,17 @@
 # - Only one valid answer exists.
 
 # Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+
+
+
+# Test Case 1
+# nums = [2,7,11,15]
+# target = 9
+
+# Test Case 2
+# nums = [3,2,4]
+# target = 6
+
+# Test Case 3
+# nums = [3,3]
+# target = 6
