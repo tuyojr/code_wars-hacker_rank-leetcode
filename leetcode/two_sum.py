@@ -33,7 +33,31 @@
 
 # Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
 
+        # create a dictionary
+        d = {}
+
+        # loop through the list
+        for num_index, num in enumerate(nums):
+
+            # if the target minus the number is in the dictionary
+            if target - num in d:
+
+                # return the index of the number and the index of the target minus the number
+                return [d[target - num], num_index]
+
+            # otherwise add the number to the dictionary
+            d[num] = num_index
+
+        # return an empty list
+        return []
 
 # Test Case 1
 # nums = [2,7,11,15]
