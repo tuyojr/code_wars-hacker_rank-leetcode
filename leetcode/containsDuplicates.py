@@ -20,3 +20,26 @@
 
 # 1 <= nums.length <= 10^5
 # -10^9 <= nums[i] <= 10^9
+
+class Solution(object):
+    def containsDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+
+        # create a dictionary to hold the elements and how many times they occur
+        duplicate = {}
+
+        # loop through the list of numbers
+        for num in nums:
+
+            # if the number is in the dictionary return True
+            if num in duplicate:
+                return True
+
+            # otherwise add the number to the dictionary
+            duplicate[num] = 1
+
+        # if there are no duplicates at all, return false
+        return False
