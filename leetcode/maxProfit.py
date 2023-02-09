@@ -26,3 +26,34 @@
 
 # 1 <= prices.length <= 10^5
 # 0 <= prices[i] <= 10^4
+
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+
+        # initialize the max profit
+        max_profit = 0
+
+        # initialize the min price
+        min_price = float("inf")
+
+        # loop through the list
+        for price in prices:
+
+            # if the price is less than the min price
+            if price < min_price:
+
+                # set the min price to the price
+                min_price = price
+
+            # otherwise if the price minus the min price is greater than the max profit
+            elif price - min_price > max_profit:
+
+                # set the max profit to the price minus the min price
+                max_profit = price - min_price
+
+        # return the max profit
+        return max_profit
