@@ -41,3 +41,34 @@
 # (0, 1)
 # (1, 2)
 # (4, 5)
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+if __name__ == '__main__':
+
+    # Create a variable to hold the input string
+    S = input()
+
+    # Create a variable to hold the substring to search for
+    k = input()
+
+    # Create a variable to hold the pattern to search for
+    pattern = re.compile(k)
+
+    # Create a variable to hold the result of the search
+    result = pattern.search(S)
+
+    # if the pattern does not match the result, print (-1, -1)
+    if not result:
+        print('(-1, -1)')
+
+    # if the pattern does match the result, print the start and end indices
+    while result:
+
+        # print the start and end indices
+        print('({0}, {1})'.format(result.start(), result.end() - 1))
+
+        # search for the next match
+        result = pattern.search(S, result.start() + 1)
