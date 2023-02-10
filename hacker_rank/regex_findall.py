@@ -62,3 +62,40 @@
 # Ioo is located between consonant k and m.
 # Oeo is located between consonant p and r.
 # eeeee is located between consonant t and t.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+if __name__ == '__main__':
+
+    # create a variable for all possible vowels
+    vowels = 'aeiouAEIOU'
+
+    # create a variable for all possible consonants
+    consonants = 'qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM'
+
+    # create a variable for the input string
+    S = input()
+
+    # create a variable for the regex pattern.
+    # the pattern is a string that contains the following:
+    # 1. a positive lookahead for a consonant
+    # 2. a positive lookahead for a vowel
+    # 3. a positive lookahead for a consonant
+    pattern = r'(?<=[%s])([%s]{2,})(?=[%s])' % (consonants, vowels, consonants)
+
+    # create a variable for the result of the regex search
+    result = re.findall(pattern, S)
+
+    # if the result is not empty print the result
+    if result:
+        for i in result:
+            print(i)
+
+    # if the result is empty print -1
+    else:
+        print(-1)
+
+    # one line solution
+    # print('\n'.join(re.findall(r'(?<=[%s])([%s]{2,})(?=[%s])' % (consonants, vowels, consonants), input())) or -1)
