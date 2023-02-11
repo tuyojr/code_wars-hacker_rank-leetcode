@@ -107,3 +107,23 @@
 # #Note do not change &&& or ||| or & or |
 # #Only change those '&&' which have space on both sides.
 # #Only change those '|| which have space on both sides.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+if __name__ == '__main__':
+    
+    # get the number of lines
+    N = int(input())
+
+    # get the lines
+    lines = []
+
+    for i in range(N):
+
+        lines.append(input())
+
+    # replace the && and || with and and or
+    for line in lines:
+        print(re.sub(r'(?<= )(&&|\|\|)(?= )', lambda x: 'and' if x.group() == '&&' else 'or', line))
