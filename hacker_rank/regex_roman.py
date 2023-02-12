@@ -33,3 +33,16 @@
 # expressions in Python.
 
 # https://developers.google.com/edu/python/regular-expressions
+
+# solution by fullydeepak on hackerrank
+# M{0,3} specifies the thousands section and basically restrains it to between 0 and 4000
+
+# (CM|CD|D?C{0,3}) is for the hundreds section.
+
+# (XC|XL|L?X{0,3}) is for the tens place.
+
+# Finally, (IX|IV|V?I{0,3}) is for the units section.
+regex_pattern = r"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$"	# Do not delete 'r'.
+
+import re
+print(str(bool(re.match(regex_pattern, input()))))
