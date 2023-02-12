@@ -7,7 +7,9 @@
 # If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
 # If he doesn't get 10 hoops, return the string "Keep at it until you get it".
 
-
+def hoop_count(n):
+    # Good Luck!
+    return "Great, now move on to tricks" if (n >= 10) else "Keep at it until you get it" 
 
 # import codewars_test as test
 
