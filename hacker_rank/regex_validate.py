@@ -41,3 +41,16 @@
 
 # YES
 # NO
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+if __name__ == '__main__':
+    N = int(input())
+    for i in range(N):
+        s = input()
+        if re.match(r'^[789]\d{9}$', s):
+            print('YES')
+        else:
+            print('NO')
