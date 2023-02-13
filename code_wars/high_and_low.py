@@ -11,7 +11,17 @@
 # Output string must be two numbers separated by a single space, and 
 # highest number is first.
 
+def high_and_low(numbers):
+    # ...
 
+    # create a list of all the numbers
+    nums = list(numbers.split(' '))
+
+    # convert the list to a tuple so we can use the max and min methods
+    nums = tuple(eval(i) for i in nums)
+
+    # return the max and min numbers in the tuple
+    return f'{max(nums)} {min(nums)}'
 
 # import codewars_test as test
 # from solution import high_and_low
