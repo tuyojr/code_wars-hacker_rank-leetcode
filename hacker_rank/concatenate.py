@@ -65,3 +65,17 @@
 #  [3 4]
 #  [3 4]
 #  [3 4]] 
+
+import numpy
+
+# input the number of rows, and column
+N, M, P = map(int, input().split())
+
+# input the array 1
+array_1 = numpy.array([input().split() for _ in range(N)], int)
+
+# input the array 2
+array_2 = numpy.array([input().split() for _ in range(M)], int)
+
+# concatenate the array
+print(numpy.concatenate((array_1, array_2), axis=0))
