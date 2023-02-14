@@ -64,3 +64,23 @@
 # virus!@variable.:p is not a valid email address because the username 
 # contains an exclamation point (!) and the extension contains a colon (:). 
 # As this email is not valid, we print nothing.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import email.utils
+import re
+
+if __name__ == '__main__':
+
+    # enter the number of names and email addresses
+    n = int(input())
+
+    # enter the email addresses
+    for _ in range(n):
+
+        # enter the name and email address
+        name, email_address = email.utils.parseaddr(input())
+
+        # validate the email address
+        if re.match(r'^[a-zA-Z][\w\-.]*@[a-zA-Z]+\.[a-zA-Z]{1,3}$', email_address):
+            print(email.utils.formataddr((name, email_address)))
