@@ -23,7 +23,25 @@
 # * Input: [5,3,2,1,4], output = [5,3,2,4]
 # * Input: [2,2,1,2,1], output = [2,2,2,1]
 
+def remove_minimum(numbers):
 
+    # do not mutate the initial array, create a new array from it to work on
+    new_nums = numbers[:]
+
+    # if the array is empty, return an empty array
+    if len(new_nums) == 0:
+        return new_nums
+
+    # find the minimum value in the array
+    minimum = min(new_nums)
+
+    # find the index of the minimum value
+    index = new_nums.index(minimum)
+
+    # remove the minimum value from the array
+    new_nums.pop(index)
+
+    return new_nums
 
 # test.describe("remove_smallest")
 
