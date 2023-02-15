@@ -81,3 +81,26 @@
 # #fff
 
 # Note: There are no comments ( // or /* */) in CSS Code.
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+if __name__ == '__main__':
+    
+    # input the number of lines of css code
+    N = int(input())
+    
+    # loop through each line
+    for _ in range(N):
+
+        # input the line of css code
+        line = input()
+
+        # search for the hex color codes
+        matches = re.findall(r':?.(#[0-9a-fA-F]{6}|#[0-9a-fA-F]{3})', line)
+
+        # print the hex color codes
+        if matches:
+            for match in matches:
+                print(match)
