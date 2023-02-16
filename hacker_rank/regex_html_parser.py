@@ -137,3 +137,53 @@
 # Empty : br
 # End   : body
 # End   : html
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+from html.parser import HTMLParser
+
+if __name__ == '__main__':
+    
+    # input the number of lines of html code
+    N = int(input())
+
+    # input the html code
+    html_code = ''
+
+    for i in range(N):
+
+        html_code += input()
+
+    # remove comments
+    html_code = re.sub(r'<!--.*?-->', '', html_code, flags=re.DOTALL)
+
+    # create a subclass and override the handler methods
+    class MyHTMLParser(HTMLParser):
+
+        def handle_starttag(self, tag, attrs):
+
+            print('Start :', tag)
+
+            for attr in attrs:
+
+                print('->', attr[0], '>', attr[1])
+
+        def handle_endtag(self, tag):
+
+            print('End   :', tag)
+
+        def handle_startendtag(self, tag, attrs):
+
+            print('Empty :', tag)
+
+            for attr in attrs:
+
+                print('->', attr[0], '>', attr[1])
+
+    # instantiate the parser and fed it some HTML
+    parser = MyHTMLParser()
+
+    parser.feed(html_code)
+
+    parser.close()
