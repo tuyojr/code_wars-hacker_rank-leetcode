@@ -77,3 +77,48 @@
 #  Welcome to HackerRank
 # >>> Single-line Comment
 # [if IE 9]>IE9-specific content<![endif]
+
+from html.parser import HTMLParser
+
+class MyHTMLParser(HTMLParser):
+
+    # create a method for the comment handler
+    def handle_comment(self, data):
+
+        # check if the comment is multiline 
+        if '\n' in data:
+            print('>>> Multi-line Comment')
+
+        # if not, it is a single line comment
+        else:
+            print('>>> Single-line Comment')
+
+        # print the comment
+        print(data)
+
+    # create a method for the data handler
+    def handle_data(self, data):
+
+        # check if the data is not empty
+        if data != '\n':
+
+            # print the data
+            print('>>> Data')
+            print(data)
+
+# instantiate the parser and fed it some HTML
+parser = MyHTMLParser()
+
+# read the number of lines
+n = int(input())
+
+# read the lines
+html = ''
+
+for i in range(n):
+    html += input().rstrip()
+    html += '\n'
+    
+parser = MyHTMLParser()
+parser.feed(html)
+parser.close()
