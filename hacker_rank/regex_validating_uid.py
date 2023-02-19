@@ -37,3 +37,49 @@
 
 # B1CD102354: 1 is repeating → Invalid
 # B1CDEF2354: Valid
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+if __name__ == '__main__':
+
+    # create function to check the UID
+    def check_UID(uid):
+
+        # check if it has 10 characters
+        if len(uid) != 10:
+            return False
+
+        # check if it has at least 2 uppercase letters
+        if len(re.findall(r'[A-Z]', uid)) < 2:
+            return False
+
+        # check if it has at least 3 digits
+        if len(re.findall(r'\d', uid)) < 3:
+            return False
+
+        # check if it has only alphanumeric characters
+        if re.search(r'[^a-zA-Z0-9]', uid):
+            return False
+
+        # check if it has no repeating characters
+        if re.search(r'(.).*\1', uid):
+            return False
+
+        return True
+
+    # get number of test cases
+    T = int(input())
+
+    # loop through test cases
+    for _ in range(T):
+
+        # get UID
+        uid = input()
+
+        # check if UID is valid
+        if check_UID(uid):
+            print('Valid')
+        else:
+            print('Invalid')
