@@ -70,3 +70,30 @@
 # 4123356789123456 : Valid
 # 5133-3367-8912-3456 : Invalid, consecutive digits  is repeating 4 times.
 # 5123 - 3567 - 8912 - 3456 : Invalid, because space ' ' and - are used
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+if __name__ == '__main__':
+
+    # input the number of credit cards to be checked
+    N = int(input())
+
+    # input the credit card numbers
+    credit_cards = [input() for _ in range(N)]
+
+    # define the regex pattern
+    pattern = r'^[456]\d{3}(-?)\d{4}\1\d{4}\1\d{4}$'
+
+    # check if the credit card number is valid
+    for credit_card in credit_cards:
+
+        # check if the credit card number is valid
+        if re.match(pattern, credit_card) and not re.search(r'(\d)\1{3,}', credit_card.replace('-', '')):
+
+            print('Valid')
+
+        else:
+
+            print('Invalid')
