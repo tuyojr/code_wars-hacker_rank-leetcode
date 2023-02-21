@@ -9,7 +9,9 @@
 
 # patrick feeney => P.F
 
-
+def abbrev_name(name):
+    names = [i for i in name.split(' ')]
+    return f'{names[0][0].upper()}.{names[1][0].upper()}'
 
 # import codewars_test as test
 
