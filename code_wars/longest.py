@@ -10,7 +10,9 @@
 # a = "abcdefghijklmnopqrstuvwxyz"
 # longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
-
+def longest(a1, a2):
+    # your code
+    return ''.join(sorted(set(a1 + a2)))
 
 # import codewars_test as test
     
