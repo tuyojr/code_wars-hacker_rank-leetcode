@@ -8,7 +8,14 @@
 
 # For example, when the input is green, output should be yellow.
 
-
+def update_light(current):
+    # Your code here.
+    if current == 'yellow':
+        return 'red'
+    elif current == 'green':
+        return 'yellow'
+    else:
+        return 'green'
 
 # import codewars_test as test
 # from solution import update_light
