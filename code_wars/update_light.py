@@ -16,6 +16,9 @@ def update_light(current):
         return 'yellow'
     else:
         return 'green'
+    
+    # other solution
+    # return {"green": "yellow", "yellow": "red", "red": "green"}[current]
 
 # import codewars_test as test
 # from solution import update_light
