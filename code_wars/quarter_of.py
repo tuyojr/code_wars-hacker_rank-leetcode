@@ -9,7 +9,19 @@
 
 # 1 <= month <= 12
 
-
+def quarter_of(month):
+    # your code here
+    q1 = [1, 2, 3]
+    q2 = [4, 5, 6]
+    q3 = [7, 8, 9]
+    if month in q1:
+        return 1
+    elif month in q2:
+        return 2
+    elif month in q3:
+        return 3
+    else:
+        return 4
 
 # from solution import quarter_of
 # import codewars_test as test
