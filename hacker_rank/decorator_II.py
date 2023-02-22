@@ -46,3 +46,20 @@
 # For sorting a nested list based on some parameter, you can use 
 # the itemgetter library. You can read more about it here.
 # https://stackoverflow.com/questions/409370/sorting-and-grouping-nested-lists-in-python?answertab=votes#tab-top
+
+import operator
+from operator import itemgetter
+
+def person_lister(f):
+    def inner(people):
+        # complete the function
+        return map(f, sorted(people, key=lambda x: int(x[2])))
+    return inner
+
+@person_lister
+def name_format(person):
+    return ("Mr. " if person[3] == "M" else "Ms. ") + person[0] + " " + person[1]
+
+if __name__ == '__main__':
+    people = [input().split() for i in range(int(input()))]
+    print(*name_format(people), sep='\n')
