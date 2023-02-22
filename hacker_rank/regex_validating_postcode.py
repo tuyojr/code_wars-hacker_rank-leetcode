@@ -56,3 +56,12 @@
 
 # A score of 0 will be awarded for using 'if' conditions in your code.
 # You have to pass all the testcases to get a positive score.
+
+regex_integer_in_range = r"^[1-9][0-9]{5}$"	# Do not delete 'r'.
+regex_alternating_repetitive_digit_pair = r"(\d)(?=\d\1)"	# Do not delete 'r'.
+
+import re
+P = input()
+
+print (bool(re.match(regex_integer_in_range, P)) 
+and len(re.findall(regex_alternating_repetitive_digit_pair, P)) < 2)
