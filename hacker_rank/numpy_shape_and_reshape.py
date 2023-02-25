@@ -63,3 +63,25 @@
 # [[1 2 3]
 #  [4 5 6]
 #  [7 8 9]]
+
+import numpy
+
+# create a function that takes an array and shapes it into a 3x3 array
+def arrays(arr):
+
+    # convert the array into a numpy array
+    numpy_array = numpy.array(arr, int)
+
+    # reshape the array into a 3x3 array
+    numpy_array = numpy.reshape(numpy_array, (3, 3))
+
+    # return the array
+    return numpy_array
+
+# get the input
+arr = input().strip().split(' ')
+
+# call the function and print the result
+result = arrays(arr)
+
+print(result)
