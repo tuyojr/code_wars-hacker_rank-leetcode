@@ -63,3 +63,15 @@
 # [[ 1.  0.  0.]
 #  [ 0.  1.  0.]
 #  [ 0.  0.  1.]]
+
+# import the numpy library
+import numpy
+
+# set the print options
+numpy.set_printoptions(legacy='1.13')
+
+# get the input
+N, M = map(int, input().split())
+
+# print the identity matrix
+print(numpy.eye(N, M))
