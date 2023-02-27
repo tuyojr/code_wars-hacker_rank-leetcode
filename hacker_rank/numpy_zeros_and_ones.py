@@ -74,3 +74,15 @@
 # Explanation 0
 
 # Print the array built using numpy.zeros and numpy.ones tools and you get the result as shown.
+
+# import the numpy library
+import numpy
+
+# get the shape of the array
+shape = tuple(map(int, input().split()))
+
+# print the array of zeros
+print(numpy.zeros(shape, dtype = numpy.int))
+
+# print the array of ones
+print(numpy.ones(shape, dtype = numpy.int))
