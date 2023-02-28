@@ -66,3 +66,48 @@
 # [[    1    64  2187 65536]] 
 
 # Use // for division in Python 3.
+
+# import numpy library
+import numpy
+
+# create a function that takes two arrays and performs the required
+# operations on them:
+def arrays(A, B):
+
+    # convert the arrays into numpy arrays
+    numpy_A = numpy.array(A, int)
+    numpy_B = numpy.array(B, int)
+
+    # add the arrays
+    print(numpy.add(numpy_A, numpy_B))
+
+    # subtract the arrays
+    print(numpy.subtract(numpy_A, numpy_B))
+
+    # multiply the arrays
+    print(numpy.multiply(numpy_A, numpy_B))
+
+    # divide the arrays
+    print(numpy.floor_divide(numpy_A, numpy_B))
+
+    # mod the arrays
+    print(numpy.mod(numpy_A, numpy_B))
+
+    # power the arrays
+    print(numpy.power(numpy_A, numpy_B))
+
+# get the dimensions of the arrays
+N, M = map(int, input().split())
+
+# get the arrays
+A = []
+B = []
+
+for i in range(N):
+    A.append(list(map(int, input().split())))
+
+for i in range(N):
+    B.append(list(map(int, input().split())))
+
+# call the function
+arrays(A, B)
