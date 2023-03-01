@@ -55,3 +55,13 @@
 # [ 1.  2.  3.  4.  5.  6.  7.  8.  9.]
 # [  2.   3.   4.   5.   6.   7.   8.   9.  10.]
 # [  1.   2.   3.   4.   6.   7.   8.   9.  10.]
+
+import numpy
+
+numpy.set_printoptions(legacy='1.13')
+
+A = numpy.array(input().split(), float)
+
+print(numpy.floor(A))
+print(numpy.ceil(A))
+print(numpy.rint(A))
