@@ -67,3 +67,11 @@
 
 # The min along axis 1 = [2 3 1 0]
 # The max of [2 3 1 0] = 3
+
+import numpy
+
+N, M = map(int, input().split())
+
+A = numpy.array([input().split() for _ in range(N)], int)
+
+print(numpy.max(numpy.min(A, axis=1)))
