@@ -73,3 +73,13 @@
 # [ 1.5  3.5]
 # [ 1.  1.]
 # 1.11803398875
+
+import numpy
+
+N, M = map(int, input().split())
+
+my_array = numpy.array([input().split() for _ in range(N)], int)
+
+print(numpy.mean(my_array, axis = 1))
+print(numpy.var(my_array, axis = 0))
+print(round(numpy.std(my_array, axis=None),11))
