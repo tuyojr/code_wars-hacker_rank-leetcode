@@ -17,6 +17,9 @@ def domain_name(url):
     else:
         url = url.split('.')
         return url[0]
+    
+    # one line solution
+    # return url.split("//")[-1].split("www.")[-1].split(".")[0]
 
 # test.assert_equals(domain_name("http://google.com"), "google")
 # test.assert_equals(domain_name("http://google.co.jp"), "google")
