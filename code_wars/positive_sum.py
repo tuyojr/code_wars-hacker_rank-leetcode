@@ -4,7 +4,14 @@
 
 # Note: if there is nothing to sum, the sum is default to 0.
 
-
+def positive_sum(arr):
+    # Your code here
+    new_arr = []
+    
+    for i in arr:
+        if i > 0:
+            new_arr.append(i)
+    return sum(new_arr)
 
 # import codewars_test as test
 # from solution import positive_sum
