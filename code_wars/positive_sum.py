@@ -12,6 +12,8 @@ def positive_sum(arr):
         if i > 0:
             new_arr.append(i)
     return sum(new_arr)
+    # one line solution
+    # return sum([x for x in arr if x > 0])
 
 # import codewars_test as test
 # from solution import positive_sum
