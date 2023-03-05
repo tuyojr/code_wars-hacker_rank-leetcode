@@ -15,3 +15,9 @@
 # Based on: http://oj.leetcode.com/problems/two-sum/
 
 # two_sum([1, 2, 3], 4) # returns [0, 2] or [2, 0]
+
+
+
+# test.assert_equals(sorted(two_sum([1,2,3], 4)), [0,2])
+# test.assert_equals(sorted(two_sum([1234,5678,9012], 14690)), [1,2])
+# test.assert_equals(sorted(two_sum([2,2,3], 4)), [0,1])
