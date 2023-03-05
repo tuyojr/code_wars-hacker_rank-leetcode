@@ -16,7 +16,14 @@
 
 # two_sum([1, 2, 3], 4) # returns [0, 2] or [2, 0]
 
-
+def two_sum(numbers, target):
+    for first_index in range(len(numbers)):
+        for second_index in range(len(numbers)):
+            if first_index != second_index:
+                if numbers[first_index] + numbers[second_index] == target:
+                    return [first_index, second_index]
+    # one line solution
+    # return [numbers.index(x), numbers.index(y)] if x != y else [numbers.index(x), numbers.index(y, numbers.index(x)+1)]
 
 # test.assert_equals(sorted(two_sum([1,2,3], 4)), [0,2])
 # test.assert_equals(sorted(two_sum([1234,5678,9012], 14690)), [1,2])
