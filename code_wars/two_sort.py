@@ -7,7 +7,10 @@
 
 # You should not remove or add elements from/to the array.
 
-
+def two_sort(array):
+    # your code here
+    array.sort()
+    return '***'.join(array[0])
 
 # import codewars_test as test
 # from solution import two_sort
