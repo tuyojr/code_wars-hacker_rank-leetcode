@@ -12,7 +12,13 @@
 # (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 # Your function should only return a number, not the explanation about how you get that number.
 
-
+def get_sum(a, b):
+  # Your code here
+  
+  if a < b:
+    return sum(list(range(a, b + 1))
+  else:
+    return sum(list(range(b, a + 1)))
 
 # from solution import get_sum
 # import codewars_test as test
