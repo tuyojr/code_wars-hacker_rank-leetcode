@@ -48,8 +48,9 @@
 
 # In the end, click "Submit" to submit your code and pass this kata.
 
-
-
+def sale_hotdogs(n):
+    # your code here
+    return 100 * n if n < 5 else 95 * n if (n >= 5 and n < 10) else 90 * n
 
 # import codewars_test as test
 # from solution import sale_hotdogs
