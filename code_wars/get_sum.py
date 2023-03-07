@@ -11,3 +11,16 @@
 # (-1, 0) --> -1 (-1 + 0 = -1)
 # (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 # Your function should only return a number, not the explanation about how you get that number.
+
+
+
+# from solution import get_sum
+# import codewars_test as test
+
+
+# @test.describe('Sum of numbers')
+# def desc1():
+#     @test.it('Sample tests')
+#     def it1():
+#         test.assert_equals(get_sum(0,1),1)
+#         test.assert_equals(get_sum(0,-1),-1)
