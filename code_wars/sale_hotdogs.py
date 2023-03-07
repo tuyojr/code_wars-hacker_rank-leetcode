@@ -47,3 +47,24 @@
 # When you have finished the work, click "Run Tests" to see if your code is working properly.
 
 # In the end, click "Submit" to submit your code and pass this kata.
+
+
+
+
+# import codewars_test as test
+# from solution import sale_hotdogs
+
+# @test.describe("Basic tests")
+# def tests():
+#     @test.it("Some examples")
+#     def tests():
+#         test.assert_equals(sale_hotdogs(0), 0)
+#         test.assert_equals(sale_hotdogs(1), 100)
+#         test.assert_equals(sale_hotdogs(2), 200)
+#         test.assert_equals(sale_hotdogs(3), 300)
+#         test.assert_equals(sale_hotdogs(4), 400)
+#         test.assert_equals(sale_hotdogs(5), 475)
+#         test.assert_equals(sale_hotdogs(9), 855)
+#         test.assert_equals(sale_hotdogs(10), 900)
+#         test.assert_equals(sale_hotdogs(11), 990)
+#         test.assert_equals(sale_hotdogs(100), 9000)
