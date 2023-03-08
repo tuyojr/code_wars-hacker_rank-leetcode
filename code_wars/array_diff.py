@@ -10,7 +10,14 @@
 
 # array_diff([1,2,2,2,3],[2]) == [1,3]
 
-
+def array_diff(a, b):
+    #your code here
+    for num in b:
+        while num in a:
+            a.remove(num)
+    return a
+    # one line solution
+    # return [num for num in a if num not in b]
 
 # import codewars_test as test
 # from solution import array_diff
