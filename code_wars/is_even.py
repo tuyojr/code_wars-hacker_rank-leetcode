@@ -8,7 +8,9 @@
 
 # Floats with decimal part non equal to zero are considered UNeven for this kata.
 
-
+def is_even(n): 
+    # your code here
+    return True if n % 2 == 0 else False
 
 # import codewars_test as test
 # from solution import is_even
