@@ -1,6 +1,8 @@
 # Write a function which converts the input string to uppercase.
 
-
+def make_upper_case(s):
+    # Code here
+    return s.upper()
 
 # import codewars_test as test
 # from solution import make_upper_case
