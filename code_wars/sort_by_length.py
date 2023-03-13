@@ -14,7 +14,12 @@
 # lengths, so you will not have to decide how to order multiple strings of 
 # the same length.
 
+def sort_by_length(arr):
+    for i in arr:
+        arr.sort(key=len)
+    return arr
 
+print(sort_by_length(["longer", "longest", "short"]))
 
 # import codewars_test as test
 # from solution import sort_by_length
