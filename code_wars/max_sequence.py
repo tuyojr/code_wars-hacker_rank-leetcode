@@ -11,7 +11,26 @@
 # Empty list is considered to have zero greatest sum. Note that the empty 
 # list or array is also a valid sublist/subarray.
 
-
+def max_sequence(arr):
+    #your code here
+    # create a variable to hold the max sum
+    max_sum = 0
+    # create a variable to hold the current sum
+    current_sum = 0
+    # loop through the array
+    for num in arr:
+        # add the current number to the current sum
+        current_sum += num
+        # if the current sum is greater than the max sum
+        if current_sum > max_sum:
+            # set the max sum to the current sum
+            max_sum = current_sum
+        # if the current sum is less than 0
+        if current_sum < 0:
+            # set the current sum to 0
+            current_sum = 0
+    # return the max sum
+    return max_sum
 
 # try:
 #     # backwards compatibility
