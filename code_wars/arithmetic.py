@@ -14,3 +14,17 @@
 # 5, 2, "divide"   --> 2.5
 
 # Try to do it without using if statements!
+
+
+
+# import codewars_test as test
+# from solution import arithmetic
+
+# @test.describe("Fixed Tests")
+# def fixed_tests():
+#     @test.it('Basic Test Cases')
+#     def basic_test_cases():
+#         test.assert_equals(arithmetic(1, 2, "add"), 3, "'add' should return the two numbers added together!")
+#         test.assert_equals(arithmetic(8, 2, "subtract"), 6, "'subtract' should return a minus b!")
+#         test.assert_equals(arithmetic(5, 2, "multiply"), 10, "'multiply' should return a multiplied by b!")
+#         test.assert_equals(arithmetic(8, 2, "divide"), 4, "'divide' should return a divided by b!")
