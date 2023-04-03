@@ -15,7 +15,19 @@
 
 # Try to do it without using if statements!
 
+def arithmetic(a, b, operator):
+    #your code here
 
+    # create a dictionary of operators
+    operators = {
+        'add': a + b,
+        'subtract': a - b,
+        'multiply': a * b,
+        'divide': a / b
+    }
+
+    # return the value of the operator
+    return operators[operator]
 
 # import codewars_test as test
 # from solution import arithmetic
