@@ -8,7 +8,9 @@
 # Note! The input is a Real number (actual type is language dependent) 
 # and is >= 0. The result should be an Integer.
 
-
+def cockroach_speed(s):
+    # Good Luck!
+    return int(s * 27.7778)
 
 # import codewars_test as test
 # from solution import cockroach_speed
