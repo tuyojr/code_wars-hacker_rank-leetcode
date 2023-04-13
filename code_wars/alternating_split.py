@@ -17,7 +17,35 @@
 # If the string S is an empty value or the integer N is not positive, return the first argument 
 # without changes.
 
+def decrypt(encrypted_text, n):
+    if n <= 0:
+        return encrypted_text
+    text_list = list(encrypted_text)
+    length = len(text_list)
+    
+    if length % 2 == 0:
+        split_part = length // 2
+    else:
+        split_part = (length - 1) // 2
+    
+    first = text_list[0:split_part]
+    second = text_list[split_part:length]
+    result_list = [ second[i // 2] if i % 2 == 0 else first[(i - 1) // 2] for i in range(0, length) ]
+    result = ''.join(result_list)
+    
+    return decrypt(result, n - 1)
 
+def encrypt(text, n):
+    if n <= 0:
+        return text
+    
+    text_list = list(text)
+    first = text_list[::2]
+    second = text_list[1::2]
+    encrypted = second + first
+    result = ''.join(encrypted)
+    
+    return encrypt(result, n - 1)
 
 # test.describe('Basic Tests')
 # test.assert_equals(encrypt("This is a test!", 0), "This is a test!")
