@@ -2,7 +2,9 @@
 
 # Note: Only valid inputs will be given.
 
-
+def boolean_to_string(b):
+    #your code here
+    return "True" if b == True else "False"
 
 # import codewars_test as test
 # from solution import boolean_to_string
