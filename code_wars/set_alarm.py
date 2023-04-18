@@ -11,7 +11,12 @@
 # setAlarm(false, false) -> false
 # setAlarm(true, false) -> true
 
-
+def set_alarm(employed, vacation):
+    # Your code here
+    if (employed == True) and (vacation == False):
+        return True
+    else:
+        return False
 
 # import codewars_test as test
 # from solution import set_alarm
