@@ -7,3 +7,18 @@
 #     return num
 
 # Can you help me fix the function?
+
+
+
+# import codewars_test as test
+# from solution import add_five
+
+# @test.describe('fix add five')
+# def fixed_tests():
+
+#     # Basic Tests: Test the basic behavior (basic understanding of the task).
+#     @test.it('Basic Test Cases')
+#     def basic_tests():
+#         test.assert_equals(add_five(5), 10)
+#         test.assert_equals(add_five(0), 5)
+#         test.assert_equals(add_five(-5), 0)
