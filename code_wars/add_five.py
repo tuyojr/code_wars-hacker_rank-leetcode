@@ -8,7 +8,9 @@
 
 # Can you help me fix the function?
 
-
+def add_five(num):
+  total = num + 5
+  return total
 
 # import codewars_test as test
 # from solution import add_five
