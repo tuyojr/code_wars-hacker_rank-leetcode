@@ -3,7 +3,16 @@
 
 # What if the string is empty? Then the result should be empty object literal, {}.
 
-
+def count(s):
+    # The function code should be here
+    count = dict()
+    
+    for letter in s:
+        if s != None:
+            count[letter] = count.get(letter, 0) + 1
+        else:
+            return {}
+    return count
 
 # import codewars_test as test
 # from solution import count
