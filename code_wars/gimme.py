@@ -16,3 +16,15 @@
 # gimme([5, 10, 14]) => 1
 # 10 is the number that fits between 5 and 14 and the index of 10 
 # in the input array is 1.
+
+
+
+# import codewars_test as test
+# from solution import gimme
+
+# @test.describe("Fixed Tests")
+# def fixed_tests():
+#     @test.it('Basic Test Cases')
+#     def basic_test_cases():
+#         test.assert_equals(gimme([2, 3, 1]), 0, 'Finds the index of middle element')
+#         test.assert_equals(gimme([5, 10, 14]), 1, 'Finds the index of middle element')
