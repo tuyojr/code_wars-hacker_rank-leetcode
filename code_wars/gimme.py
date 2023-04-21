@@ -17,7 +17,9 @@
 # 10 is the number that fits between 5 and 14 and the index of 10 
 # in the input array is 1.
 
-
+def gimme(input_array):
+    # Implement this function
+    return input_array.index(sorted(input_array)[1])
 
 # import codewars_test as test
 # from solution import gimme
