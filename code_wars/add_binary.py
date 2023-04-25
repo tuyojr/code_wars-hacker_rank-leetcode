@@ -9,7 +9,9 @@
 # 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
 # 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
-
+def add_binary(a,b):
+    #your code here
+    return bin(a + b).replace('0b', '')
 
 # import codewars_test as test
 # from solution import add_binary
