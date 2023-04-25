@@ -8,3 +8,7 @@
 # "HELLO"     -->  "HELLO"
 # don't worry about uppercase vowels
 # y is not considered a vowel for this kata
+
+
+
+# test.assert_equals(shortcut('hello'),'hll')
