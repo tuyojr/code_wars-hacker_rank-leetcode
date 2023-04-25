@@ -22,7 +22,15 @@
 # s="aaaxbbbbyyhwawiwjjjwwm"
 # printer_error(s) => "8/22"
 
-
+def printer_error(s):
+    # your code
+    control_string = "abcdefghijklm"
+    error_counter = 0
+    
+    for string in s:
+        if string not in control_string:
+            error_counter += 1
+    return "{}/{}".format(error_counter, len(s))
 
 # import codewars_test as test
 # from solution import printer_error
