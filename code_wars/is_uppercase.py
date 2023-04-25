@@ -15,14 +15,8 @@ any lowercase letter so any string containing no letters at all is trivially
 considered to be in ALL CAPS.
 """
 
-import re
 def is_uppercase(inp):
-    if inp.upper() == inp:
-        return True
-    elif re.match('[a-z]',inp) != None:
-        return False
-    else:
-        return False
+    return inp == inp.upper()
 
 # def gen_test_case(inp, res):
 #     test.assert_equals(is_uppercase(inp), res, inp)
