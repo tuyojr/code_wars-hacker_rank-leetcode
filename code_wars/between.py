@@ -7,3 +7,15 @@
 # a = 1
 # b = 4
 # --> [1, 2, 3, 4]
+
+
+
+# import codewars_test as test
+# from solution import between
+
+# @test.describe("Fixed Tests")
+# def fixed_tests():
+#     @test.it('Basic Test Cases')
+#     def basic_test_cases():
+#         test.assert_equals(between(1, 4), [1, 2, 3, 4])
+#         test.assert_equals(between(-2, 2), [-2, -1, 0, 1, 2])
