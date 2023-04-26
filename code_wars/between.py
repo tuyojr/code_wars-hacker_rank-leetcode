@@ -8,7 +8,9 @@
 # b = 4
 # --> [1, 2, 3, 4]
 
-
+def between(a,b):
+    # good luck
+    return [number for number in range(a, b+1)]
 
 # import codewars_test as test
 # from solution import between
