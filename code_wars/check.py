@@ -5,7 +5,8 @@
 
 # Return true if the array contains the value, false if not.
 
-
+def check(seq, elem):
+    return True if elem in seq else False
 
 # import codewars_test as test
 # from solution import check
