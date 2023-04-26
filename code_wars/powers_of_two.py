@@ -7,7 +7,8 @@
 # n = 1  ==> [1, 2]     # [2^0, 2^1]
 # n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 
-
+def powers_of_two(n):
+    return [2**number for number in range(0, n+1)]
 
 # import codewars_test as test
 # from solution import powers_of_two
