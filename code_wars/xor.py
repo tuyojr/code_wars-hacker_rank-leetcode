@@ -18,7 +18,10 @@
 # described above, returning true if exactly one of the two expressions evaluate
 # to true, false otherwise.
 
-
+def xor(a,b):
+    #your code here
+    return True if ((a == True) and (b == False)) or ((a == False) and (b == True)) else False
+    # return a != b
 
 # import codewars_test as test
 # from solution import xor
