@@ -29,3 +29,14 @@
 # ...that is:
 
 # "  *\n ***\n*****\n ***\n  *\n"
+
+
+# expected =  " *\n"
+# expected += "***\n"
+# expected += " *\n"
+# test.assert_equals(diamond(1), "*\n")
+# test.assert_equals(diamond(2), None)
+# test.assert_equals(diamond(3), expected)
+# test.assert_equals(diamond(5), "  *\n ***\n*****\n ***\n  *\n")
+# test.assert_equals(diamond(0), None)
+# test.assert_equals(diamond(-3), None)
