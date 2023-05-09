@@ -12,6 +12,11 @@
 # "Buckethead" is an anagram of "DeathCubeK"
 
 
+# write the function is_anagram
+def is_anagram(test, original):
+    return True if (sorted(test.lower()) == sorted(original.lower())) else False
+
+
 # import codewars_test as test
 # from solution import is_anagram
 
