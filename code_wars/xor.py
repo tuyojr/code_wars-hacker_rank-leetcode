@@ -18,20 +18,26 @@
 # described above, returning true if exactly one of the two expressions evaluate
 # to true, false otherwise.
 
-def xor(a,b):
-    #your code here
-    return True if ((a == True) and (b == False)) or ((a == False) and (b == True)) else False
+
+def xor(a, b):
+    # your code here
+    return (
+        True
+        if ((a == True) and (b == False)) or ((a == False) and (b == True))
+        else False
+    )
     # return a != b
+
 
 # import codewars_test as test
 # from solution import xor
 
 # @test.describe("Your 'xor' function/operator")
 # def _():
-    
+
 #     @test.it("should work for the four basic cases described above")
 #     def _():
 #         test.assert_equals(xor(False, False), False, "False xor False == False")
 #         test.assert_equals(xor(True, False), True, "True xor False == True")
 #         test.assert_equals(xor(False, True), True, "False xor True == True")
-        test.assert_equals(xor(True, True), False, "True xor True == False")
+#         test.assert_equals(xor(True, True), False, "True xor True == False")
