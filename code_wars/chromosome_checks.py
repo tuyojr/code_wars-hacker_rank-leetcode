@@ -16,6 +16,15 @@
 # chromosome, return "Congratulations! You're going to have a son.";
 
 
+def chromosome_check(sperm):
+    # Your code here
+    return (
+        "Congratulations! You're going to have a son."
+        if sperm == "XY"
+        else "Congratulations! You're going to have a daughter."
+    )
+
+
 # import codewars_test as test
 # from solution import chromosome_check
 
