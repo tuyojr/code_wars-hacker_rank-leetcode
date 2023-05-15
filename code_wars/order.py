@@ -12,6 +12,16 @@
 # ""  -->  ""
 
 
+def order(sentence):
+    # code here
+    words = []
+    for i in range(1, 10):
+        for word in sentence.split():
+            if str(i) in word:
+                words.append(word)
+    return " ".join(words)
+
+
 # from solution import order
 # import codewars_test as test
 
