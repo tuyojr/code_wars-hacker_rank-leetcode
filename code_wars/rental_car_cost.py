@@ -12,6 +12,16 @@
 # Write a code that gives out the total amount for different days(d).
 
 
+def rental_car_cost(d):
+    # your code
+    if d >= 7:
+        return (d * 40) - 50
+    elif d >= 3 and d <= 6:
+        return (d * 40) - 20
+    else:
+        return d * 40
+
+
 # import codewars_test as test
 # from solution import rental_car_cost
 
