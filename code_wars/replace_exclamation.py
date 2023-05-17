@@ -7,6 +7,8 @@
 # replace("aeiou") === "!!!!!"
 # replace("ABCDE") === "!BCD!"
 
+def replace_exclamation(s):
+    return "".join(["!" if c in "aeiouAEIOU" else c for c in s])
 
 # test.assert_equals(replace_exclamation("Hi!") , "H!!")
 # test.assert_equals(replace_exclamation("!Hi! Hi!") , "!H!! H!!")
