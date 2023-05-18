@@ -8,6 +8,8 @@
 
 # All values will be positive integers or floats, or zero.
 
+def plural(n):
+    return False if n == 1 else True
 
 # import codewars_test as test
 # from solution import plural
