@@ -7,3 +7,15 @@
 # anything that isn't singular (one of something), it is plural (not one of something).
 
 # All values will be positive integers or floats, or zero.
+
+
+# import codewars_test as test
+# from solution import plural
+
+# @test.describe("Sample tests")
+# def _():
+#     @test.it("Tests")
+#     def __():
+#         test.assert_equals(plural(0), True)
+#         test.assert_equals(plural(1), False)
+#         test.assert_equals(plural(100), True)
