@@ -10,7 +10,13 @@
 
 # Note: String will have at least one element; words will always be separated by a space.
 
-
+def add_length(str_):
+    #your code here
+    word_arr = []
+    for word in str_.split():
+        counted_word = word + " " + str(len(word))
+        word_arr.append(counted_word)
+    return word_arr
 
 # import codewars_test as test
 # from solution import add_length
