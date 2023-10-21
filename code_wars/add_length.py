@@ -17,6 +17,7 @@ def add_length(str_):
         counted_word = word + " " + str(len(word))
         word_arr.append(counted_word)
     return word_arr
+    # return [f"{w} {len(w)}" for w in str_.split()]
 
 # import codewars_test as test
 # from solution import add_length
