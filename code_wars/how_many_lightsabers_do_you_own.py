@@ -12,7 +12,8 @@
 # "anyone else" --> 0
 # "Zach" --> 18
 
-
+def how_many_light_sabers_do_you_own(name = None):
+    return 18 if name == "Zach" else 0
 
 # import codewars_test as test
 # from solution import how_many_light_sabers_do_you_own
