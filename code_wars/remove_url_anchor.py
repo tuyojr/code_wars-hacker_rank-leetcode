@@ -4,8 +4,9 @@
 # "www.codewars.com#about" --> "www.codewars.com"
 # "www.codewars.com?page=1" -->"www.codewars.com?page=1"
 
-
-
+def remove_url_anchor(url):
+    # TODO: complete
+    return url.split("#")[0]
 
 # import codewars_test as test
 # from solution import remove_url_anchor
