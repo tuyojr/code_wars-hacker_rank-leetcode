@@ -6,7 +6,6 @@ def solve(haab_date: str) -> str:
         "muan", "pax", "koyab", "cumhu", "uayet"
     ]
 
-
     tzolkin_days = [
         "imix", "ik", "akbal", "kan", "chicchan", "cimi", "manik",
         "lamat", "muluk", "ok", "chuen", "eb", "ben", "ix",
