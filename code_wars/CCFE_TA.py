@@ -1,5 +1,5 @@
 def solve(haab_date: str) -> str:
-    # Define the Haab and Tzolkin month names
+    # Define the Haab month names and Tzolkin day names
     haab_months = [
         "pop", "no", "zip", "zotz", "tzec", "xul", "yoxkin",
         "mol", "chen", "yax", "zac", "ceh", "mac", "kankin",
