@@ -9,7 +9,13 @@
 
 # More details about factorial can be found here (https://www.wikiwand.com/en/Factorial).
 
-
+def factorial(n):
+        if n < 0 or n > 12:
+            raise ValueError("Input must be between 0-12.")
+        elif n == 0:
+            return 1
+        else:
+            return n * factorial(n - 1)
 
 # import codewars_test as test
 # from solution import factorial
