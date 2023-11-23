@@ -17,6 +17,7 @@ def correct(s):
     s = s.replace("0", "O")
     s = s.replace("1", "I")
     return s
+    # return string.replace('1','I').replace('0','O').replace('5','S')
 
 # from solution import correct
 # import codewars_test as test
