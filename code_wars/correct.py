@@ -12,7 +12,11 @@
 # I is misinterpreted as 1
 # The test cases contain numbers only by mistake.
 
-
+def correct(s):
+    s = s.replace("5", "S")
+    s = s.replace("0", "O")
+    s = s.replace("1", "I")
+    return s
 
 # from solution import correct
 # import codewars_test as test
