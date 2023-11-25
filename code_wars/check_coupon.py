@@ -10,4 +10,3 @@
 
 # A coupon is no more valid on the day AFTER the expiration date. 
 # All dates will be passed as strings in this format: "MONTH DATE, YEAR".
-
