@@ -4,7 +4,10 @@
 
 # "john McClane" --> "McClane john"
 
-
+def name_shuffler(str_):
+    #your code here
+    new_str = str_.split()
+    return new_str[1] + " " + new_str[0]
 
 # import codewars_test as test
 # from solution import name_shuffler
