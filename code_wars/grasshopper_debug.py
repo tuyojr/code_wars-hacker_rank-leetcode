@@ -4,7 +4,8 @@
 # def main [verb, noun]
 # return verb + noun
 
-
+def main(verb, noun):
+    return verb + noun
 
 # @test.describe('Example Tests')
 # def example_tests():
