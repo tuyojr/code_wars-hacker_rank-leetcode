@@ -7,7 +7,8 @@
 # The ord() function takes a string that represents 1 Unicode character 
 # and returns an integer representing the Unicode code point of the given character.
 
-
+def position(alphabet):
+    return f'Position of alphabet: {ord(alphabet.lower()) - 96}'
 
 # import codewars_test as test
 # from solution import position
